@@ -1,0 +1,11 @@
+---
+title: "tutorials"
+---
+
+These are the tutorials for the "open science theory and practice" part of the course "Data handling and high-quality illustrations for publications".
+
+# prerequisites: 
+
+You will need a `github account`, an installation of `R`and `RStudio`, and you will have to have git set-up in your RStudio. 
+
+# set up git for rstudio
