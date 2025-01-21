@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "git_and_r.html",
-    "href": "git_and_r.html",
-    "title": "",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "tutorials",
     "section": "",
-    "text": "Code\n\n\n\n\nIn the following exercise you will create a github repository to track your code.\n\nChoose your license\nThink about your project and the code you will have in the repository. What license would fit?\nChoose an open source license can help you figure out what license is appropriate.\n\n\nCreate a repository\n\nname it\nadd a description\nmake it publie\nadd the license\nadd a README\n\n\n\ngitignore\n\n\ngithub skills\ngithub skills"
-  },
-  {
-    "objectID": "quarto.html",
-    "href": "quarto.html",
-    "title": "",
-    "section": "",
-    "text": "Code\n\n\n\n\n\n\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```"
+    "text": "These are the tutorials for the “open science theory and practice” part of the course “Data handling and high-quality illustrations for publications”.\n\nprerequisites:\nYou will need a github account, an installation of Rand RStudio, and you will have to have git set-up in your RStudio.\n\n\nset up git for rstudio"
   },
   {
     "objectID": "git_one.html",
@@ -21,10 +14,17 @@
     "text": "Code"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "tutorials",
+    "objectID": "quarto.html",
+    "href": "quarto.html",
+    "title": "",
     "section": "",
-    "text": "These are the tutorials for the “open science theory and practice” part of the course “Data handling and high-quality illustrations for publications”.\n\nprerequisites:\nYou will need a github account, an installation of Rand RStudio, and you will have to have git set-up in your RStudio.\n\n\nset up git for rstudio"
+    "text": "Code\n\n\n\n\n\n\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```"
+  },
+  {
+    "objectID": "git_and_r.html",
+    "href": "git_and_r.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\nIn the following exercise you will create a github repository to track your code.\n\nChoose your license\nThink about your project and the code you will have in the repository. What license would fit?\nChoose an open source license can help you figure out what license is appropriate.\n\n\nCreate a repository\n\nname it\nadd a description\nmake it publie\nadd the license\nadd a README\n\n\n\ngitignore\n\n\ngithub skills\ngithub skills"
   }
 ]
