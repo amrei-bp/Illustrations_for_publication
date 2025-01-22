@@ -1,0 +1,8 @@
+
+
+# What is tagging?
+
+In Git one can tag specific points in a repository’s history with an extra label, besides the commit message. This can be used to mark releases for software (`version1.0, version2.0). 
+
+For us it can be useful when submitting code to journals. With a tag we can freeze the code in time, so to speak, and make sure we can always find the correct version - and share it with others. 
+

@@ -1,5 +1,92 @@
 
-This part of the course is to have you practice the concepts we encountered earlier. 
+# What is literate programming?
+
+LIterate programming produces documents where explanations given in a natural language (such as English) is interspersed with snippets of code.
+
+This concept was introduced 1984 by Donald Knuth (according to [Wikipedia](https://en.wikipedia.org/wiki/Literate_programming)), and is good practice for `reproducibility and open science`.
+
+# Tools for literate programming
+
+There are a lot of different tools for literate programming, for example Jupyter notebooks, markdown, or quarto. 
+
+![](quarto.png){fig-align="center" height="50"}
+
+You have already started to work with quarto, so we will have a closer look at that one - plus it makes me happy and I want to spread the joy!
+
+# Quarto
+
+<figure style="float: right; margin: 0 0 1em 1em; text-align: center;">
+  <img src="quarto_output.png" alt="Quarto Output" style="height: 400px;">
+  <figcaption style="font-style: italic; font-size: 0.9em;">image captured at https://quarto.org/</figcaption>
+</figure>
+
+Quarto is open source and you can edit quarto documents in a variety of editors, such as: jupyter notebooks, Visual Studio Code (more joy here, by the way), Rstudio or really any text editor.  
+
+You can use a variety of language in your quarto documents - bash, R, Python, Julia, etc. 
+
+And last but not least you can produce a variety of output formats, such as websites (like this tutorial,) articles, presentations (like this mornings' presentation), books, dashboards. 
+
+<div style="clear: both;"></div>
+
+# Basic syntax
+
+Based on this tutorial [here](https://quarto.org/docs/get-started/hello/rstudio.html).
+
+## YAML header
+
+```{verbatim}
+---
+title: "Hello, Quarto"
+format: html
+editor: visual
+---
+```
+
+The YAML header resides at the top of the document, but is optional. It is marked by three dashes on either end and follows the basic YAML syntax, using key-value pairs `key: value`. 
+
+Common fields in the header are `title, author, subtitle, date`, as well as customizable fields such as `theme, fontcolor`. 
+
+[Here](https://quarto.org/docs/reference/formats/html.html) you can find the fields that are available in quarto for HTML documents. 
+
+## Code Chunks
+
+````{verbatim}
+```{.r}
+#| label: load-packages
+#| include: false
+
+library(tidyverse)
+library(palmerpenguins)
+```
+````
+
+Can be added anywhere in the document (apart from the header). Different chunks in the same document can execute different languages. The language is identified by the curly brackets at the beginning. 
+
+Optional code chunk options are listed below and are identified by `#|`.
+
+In RStudio you can either render the entire document, or individual chunks. 
+
+## Markdown Text
+
+Formated text between the code chunks with 
+
+- section headers (`#, ##, ###`)
+- hyperlinks (`[in-line text](web-address)`)
+- embedded images
+- inline code chunks
+- and more
+
+This text is there to help you and others. It can explain why you do certain things with your data, can describe results, make comments, tell a story...
+
+## how it works
+
+![](rstudio-qmd-how-it-works.png){fig-align="center" height="120"}
+
+When you render the document, knitr executes all of the code chunks and creates a new markdown, which includes code and output, as well as the text. Then, pandoc takes this .md file and creates the final output. 
+
+# Let's try it out!
+
+In the following tutorial you can practice what we have done so far and spruce up your code with some literate programming and other nice quarto features. 
 
 I want you to work on the code you have worked on before - Tuesday or Wednesday, you can choose. 
 
@@ -7,7 +94,7 @@ Make changes, commit them and push them to your remote repository. Do one commit
 
 # 1. Quarto theme
 
-Change the theme of your file - read up on Quarto themes and apply one you like
+Change the theme of your file - read up on Quarto themes and apply one you like.
 
 # 2. Literate programming
 
@@ -18,7 +105,6 @@ Make sure you have text for all your images, comments that explain what the code
 # 3. ggplot colors
 
 Change the colors of one of your images. 
-
 
 
 # relevant resources
@@ -41,7 +127,7 @@ Change the colors of one of your images.
 
 ### if you do not have code
 
-you worked on you can use the one below:
+you can use the one below:
 ````{verbatim}
 ---
 title: "ggplot2 demo"
