@@ -5,7 +5,7 @@ website:
   title: "Open Science"
   navbar:
     left:
-      - href: git_one.qmd
+      - href: git_github.qmd
         text: git and Github
       - href: git_and_r.qmd
         text: git in Rstudio

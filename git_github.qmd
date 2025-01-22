@@ -1,0 +1,52 @@
+
+In the following exercise you will create a github repository to track your code. 
+
+Let's first have a look at [Github](https://github.com/), the code hosting platform that is based on git. We will do this together. 
+
+# In this tutorial
+
+We will now:
+
+- create a repository
+- edit some files
+- commit the changes 
+- look at the history of the respository. 
+
+Let's get started!
+
+
+# Create a repository
+
+- name it 
+- add a description
+- make it public
+- add a README
+- add the R gitignore
+- add the license
+- create the repository
+
+Think about your project and the code you will have in the repository. What license would fit?
+
+[Choose an open source license](https://choosealicense.com/) can help you figure out what license is appropriate. 
+
+# Edit the README
+
+You can edit the readme to add relevant information. The format is classic markdown, the same as you have worked with before. [Here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) is a guide to basic markdown styling. 
+
+# Save the README
+
+You save the file on Github by clicking on `Commit changes`. This will prompt you to enter a `commit message`. This is the information that will accompany your changes and will help you find changes you might be looking for. 
+
+# Look at the commit history of the repository
+
+There is a little button with a `clock symbol` that will get you to the history of the repository. It lists all the commits, with the commit message, the associated author, and its identifier. 
+
+If you click on an individual commit you will see the changes that are captured within. Your brand new repository is of course a little bare-boned, but if you check out a repository that is a bit older you will get more information. Check out the [SLUBI 3bees workshop series](https://github.com/SLUBioinformaticsInfrastructure/Three_Bees_Workshop_Series) github page, for example. 
+
+# Further resources
+
+If you want to have a short introduction to the basic mechanisms in Github, you can follow [this tutorial](https://github.com/skills/introduction-to-github?tab=readme-ov-file), which guides you through making a repository, making a branch, committing a file, making a pull request and merging the pull request. Some of these we will cover today, others will be useful once you use git and github on a more regular basis. 
+
+# even more resources
+
+[github skills](https://skills.github.com/)
