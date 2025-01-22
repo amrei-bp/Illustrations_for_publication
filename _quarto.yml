@@ -11,17 +11,21 @@ website:
         text: git in Rstudio
       - href: quarto.qmd
         text: literate programming
+      - href: tagging.qmd
+        text: tagging
 
 format: 
   html:
     code-fold: true
     code-summary: "Click here to show the code"
     code-tools: true
-    theme: united
+    theme: 
+      - solar
+      - test.scss
     self-contained: true
     page-layout: full
     toc: true
-    toc-depth: 4
+    toc-depth: 3
     css: styles.css
 # engine: knitr
 
