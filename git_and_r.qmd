@@ -1,169 +1,144 @@
 
-In the following exercise you will create a github repository to track your code. 
-
-# Choose your license
-
-Think about your project and the code you will have in the repository. What license would fit?
-
-[Choose an open source license](https://choosealicense.com/) can help you figure out what license is appropriate. 
-
-# Create a repository
-
-- name it 
-- add a description
-- make it publie
-- add the license
-- add a README
-
-# gitignore
-
-
-
-# github skills
-
-[github skills](https://skills.github.com/)
-
-
-Working collaboratively with git on github
+Now we have changed files and committed those changes on Github, but the plan is to work on our code locally on our computer (just as we are used to) and to use git/Github to track our work. 
 
 We will follow the Data carpentries tutorial here: https://datacarpentry.org/rr-version-control/03-git-in-rstudio/
 
+# Basic git workflow
 
-The data we will work on is in the following repository: https://github.com/SGBC/survey
+Remember the basic git workflow?
 
+<img src="git_diagram.png" alt="alt text" width="500" />
 
+# In this tutorial 
 
+We already created our git repository on Github. 
 
-
-We can use git and github to work collaboratively with others on projects and code. The process here is a bit more involved, but at heart it uses the same change, stage, commit processes that we have already seen. What we add is a remote repository, also called upstream repository.
-
-Because we do not want to mess with the stable upstream repository we first make a fork and copy it into our own repository. Then we clone the contents of our remote repository onto our local computer and create a new branch. Then we can change, stage and commit. The commits can then be pushed to out remote repository. Once we are happy with out new feature we can create a pull request (ask the owner of the upstream repository to add our code to their repository).
-
-
-
-
-This is how this process can look like:
-
-Image adapted from: https://www.linode.com/docs/guides/how-to-install-git-and-clone-a-github-repository/
+Now we will:
 
 
-
-
-
-And here is another way to look at the process:
-
-Image taken from: https://tighten.com/insights/adding-commits-to-a-pull-request/
-
-
-
-
+- clone the contents of the remote repository to our local computer
+- change, stage and commit
+- push changes to the remote repository
 
 So, let's try this out!
 
 
+# Clone the repository to RStudio
+
+Now you have a repository in your github account, but you want to work locally on your computer. You need to clone the repository to your local environment.
+
+- On GitHub, navigate to the `Code tab` of the repository.
+- On the right side of the screen, click `Code`, ``local` and `ssh`.
+- Click the `Copy to clipboard` icon to the right of the repository URL.
+- `Open RStudio` on your local environment.
+- Click `File, New Project, Version Control, Git`.
+- `Paste the repository URL` into the appropriate field and `browse to the desired directory` for your R project. 
+- Click `Create Project`.
+
+Now you have the contents of your repository locally in Rstudio. 
 
 
-Step 1: Fork:
+## Look at the git tab in Rstudio
 
-Sometimes you might want to change someone elses data, or work together with them on some code. For this you do not work on the exact same code, but you make yourself a copy - you fork the project. A fork is a new repository that shares code and visibility settings with the original “upstream” repository.
-
-Fork the survey repository.
-
-Go to the repository at https://github.com/SGBC/survey.
-Click on “Fork”” (on the top right corner).
-Click on "create fork"
-
-Now you have a copy in your github account!
-
-Step 2: Clone the repository with RStudio
-
-Now you have a fork of the repository on your github, but you do not have the files in that repository locally on your computer. To retreive them to your local computer you need to clone the repository to your local environment.
+Can you find the commit history?
 
 
+# Add files to the repository
 
+There are different ways to do this: 
 
-On GitHub, navigate to the Code tab of the repository.
-On the right side of the screen, click Code, local and ssh.
-Click the Copy to clipboard icon to the right of the repository URL.
-Open RStudio on your local environment.
-Click File, New Project, Version Control, Git.
-Paste the repository URL and enter TAB to move to the Project directory name field.
-Click Create Project.
+## via Rstudio
 
+- in Rstudio, in the lower right corner, click on the `plus documents`button in the `Files`tab
+- specify the type of document and the name
 
+## via copy-paste
 
+- copy the file you have already been working on into the Rstudio project directory
+- they will appear in the lower right in Rstudio
 
-Step 3: Make a new branch
+# make changes
 
-This is the branch where you will do the work, change the code etc.
+Now you can make changes to the files as you wish. 
 
-1. in Rstudio, click the purple branch button
-
-2. name your branch
-
-3. choose from origin
-
-
-
-
-Step 4: Make the changes you want to see
-
-on your new branch
-
-Step 5: Stage
+# Stage the changes
 
 Stage your changes to be committed.
 
-Go to the Git pane in RStudio.
-Stage the changes for the files you changed by checking the boxes next to then, and hit Commit
-Step 6: Commit
+- Go to the `Git tab` in RStudio.
+- Stage the changes for the files you changed by `checking the boxes` next to then
 
-View the diff, and commit your changes, with a commit message.
+# .gitignore
+
+There are maybe some files in your working directory that you do not want to have version controlled on git. This might be for several different reasons, such as: 
+
+- they contain sensitive information and the repository is public
+- it's raw data; github is NOT a storage space for data
+- they are intermediate files generated by the run
+
+Here, we will generate a .Rproj file, that we do not want to track on git. You can tell git to ignore those files by adding them to the .gitignore file: 
+
+- add `*.Rproj` to the `.gitignore` file and save it. 
+
+The files will disappear from the git tab in Rstudio. 
+
+
+# Commit
+
+- Click `commit`, and a new window will appear. 
+
+Now you can review your staged changes. If you are satisfied commit your changes, with a commit message.
 
 In the pop-up window view the diff for the files.
 Enter an informative commit message, like “Changed analysis year to X”, and hit Commit.
 
 
-
-
-Step 7: Push
+# Push
 
 Now you have the changes saved and tracked on your local computer. But you want to on github too!
 
-Push your changes to your own fork of the the survey GitHub repository.
+ click in the green upward arrow button to push your changes to your GitHub repository.
 
-push: When using git push always means pushing commits from your local respository (your computer) to a remote repository (GitHub).
+When using git push always means pushing commits from your local respository (your computer) to a remote repository (GitHub).
 
-Now push your changes to GitHub by hitting Push.
 Enter login information as needed.
 
- 
+# notes on the exercise
 
-Step 8: Pull request
-On GitHub, navigate to the Pull request tab at the top.
-New pull request
-At the top, choose from which repository and branch, to which repository and branch the data should be merged. In this case this is from your new branch to the main of the original upstream repository.
-Create pull request and describe what you have been doing.
-Step 9: wait for feedback
-
-The owner of the upstream repository will now get a message that a pull request has been made. They review the changes, might write comments for you to respond to, or might merge your changes to the branch.
-
-
-
-
-Step 10: Sync your remote repository
-
-Once the pull request is merged sync your remote main with the upstream repository, and pull these changes to your local repository.
-
-
-
+We have now done the staging and committing in two different ways, once directly on Github, and once with Rstudio. Of course it is also possible to use git via the command line in the terminal. 
 
 Further reading and exercises on how to use git on the command line: https://uppsala.instructure.com/courses/96483/pages/git-1-introduction?module_item_id=1027800
 
 
 
+# Extra: Fork a repository that is not yours
+
+Sometimes you might want to change someone elses data, or work together with them on some code. For this you do not work on the exact same code, but you make yourself a copy - you fork the project on github. A fork is a new repository that shares code and visibility settings with the original “upstream” repository.
+
+- To fork a repository you navigate to the repository you want to fork
+- Then you click on `Fork` (on the top right corner)
+- Then you click on `create fork`
+
+Now you have a copy in your github account, and can continue with cloning it to your local computer. 
+
+# Extra: Pull request
+
+Once you have worked on your version of the code and are ready to show it to your collaborators on Github you can make a pull request. A pull request suggests you changes to the owner of the upstream repository and ask them to "pull" your changes into their repository. 
+
+- On GitHub, navigate to the `Pull request tab` at the top.
+- `New pull request`
+- At the top, choose from which repository and branch, to which repository and branch the data should be merged.
+- `Create pull request` and describe what you have been doing.
+- wait for feedback
+
+The owner of the upstream repository will now get a message that a pull request has been made. They review the changes, might write comments for you to respond to, or might merge your changes to the branch.
 
 
+# Extra: Sync your remote repository
+
+Once the pull request is merged sync your remote main with the upstream repository, and pull these changes to your local repository.
 
 
+And here is how the full process looks like: 
+<img src="git-github-workflow_amrei.png" alt="alt text" width="800" />
 
