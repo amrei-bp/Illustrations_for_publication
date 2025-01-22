@@ -18,7 +18,21 @@
     "href": "quarto.html",
     "title": "",
     "section": "",
-    "text": "Code\n\n\n\n\n\n\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```"
+    "text": "Code\nThis part of the course is to have you practice the concepts we encountered earlier.\nI want you to work on the code you have worked on before - Tuesday or Wednesday, you can choose.\nMake changes, commit them and push them to your remote repository. Do one commit for each of the following:"
+  },
+  {
+    "objectID": "quarto.html#quarto",
+    "href": "quarto.html#quarto",
+    "title": "",
+    "section": "quarto",
+    "text": "quarto\nQuarto documentation"
+  },
+  {
+    "objectID": "quarto.html#color-in-illustrations",
+    "href": "quarto.html#color-in-illustrations",
+    "title": "",
+    "section": "color in illustrations",
+    "text": "color in illustrations\nBetter plots\nChapter on Highlighting in Plots\nPractical Rules for Using Color in Charts\n\nif you do not have code\nyou worked on you can use the one below:\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```"
   },
   {
     "objectID": "git_and_r.html",
