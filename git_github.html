@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>tutorials – Open Science</title>
+<title>git_github – Open Science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -4765,7 +4765,7 @@ vertical-align: -.125em;
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./git_github.html"> 
+    <a class="nav-link active" href="./git_github.html" aria-current="page"> 
 <span class="menu-text">git and Github</span></a>
   </li>  
   <li class="nav-item">
@@ -4796,40 +4796,69 @@ vertical-align: -.125em;
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link active" data-scroll-target="#prerequisites">prerequisites:</a></li>
-  <li><a href="#set-up-git-for-rstudio" id="toc-set-up-git-for-rstudio" class="nav-link" data-scroll-target="#set-up-git-for-rstudio">set up git for rstudio</a></li>
+  <li><a href="#in-this-tutorial" id="toc-in-this-tutorial" class="nav-link active" data-scroll-target="#in-this-tutorial">In this tutorial</a></li>
+  <li><a href="#create-a-repository" id="toc-create-a-repository" class="nav-link" data-scroll-target="#create-a-repository">Create a repository</a></li>
+  <li><a href="#edit-the-readme" id="toc-edit-the-readme" class="nav-link" data-scroll-target="#edit-the-readme">Edit the README</a></li>
+  <li><a href="#save-the-readme" id="toc-save-the-readme" class="nav-link" data-scroll-target="#save-the-readme">Save the README</a></li>
+  <li><a href="#look-at-the-commit-history-of-the-repository" id="toc-look-at-the-commit-history-of-the-repository" class="nav-link" data-scroll-target="#look-at-the-commit-history-of-the-repository">Look at the commit history of the repository</a></li>
+  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further resources</a></li>
+  <li><a href="#even-more-resources" id="toc-even-more-resources" class="nav-link" data-scroll-target="#even-more-resources">even more resources</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">tutorials</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
-</div>
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7"></h1></header><div class="quarto-title-block"><div class="quarto-title-tools-only"><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 
 
 
-<div class="quarto-title-meta column-page-left">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>These are the tutorials for the “open science theory and practice” part of the course “Data handling and high-quality illustrations for publications”.</p>
-<section id="prerequisites" class="level1">
-<h1>prerequisites:</h1>
-<p>You will need a <code>github account</code>, an installation of <code>R</code> and <code>RStudio</code>, and you will have to have git set-up in your RStudio.</p>
+<p>In the following exercise you will create a github repository to track your code.</p>
+<p>Let’s first have a look at <a href="https://github.com/">Github</a>, the code hosting platform that is based on git. We will do this together.</p>
+<section id="in-this-tutorial" class="level1">
+<h1>In this tutorial</h1>
+<p>We will now:</p>
+<ul>
+<li>create a repository</li>
+<li>edit some files</li>
+<li>commit the changes</li>
+<li>look at the history of the respository.</li>
+</ul>
+<p>Let’s get started!</p>
 </section>
-<section id="set-up-git-for-rstudio" class="level1">
-<h1>set up git for rstudio</h1>
+<section id="create-a-repository" class="level1">
+<h1>Create a repository</h1>
+<ul>
+<li>name it</li>
+<li>add a description</li>
+<li>make it public</li>
+<li>add a README</li>
+<li>add the R gitignore</li>
+<li>add the license</li>
+<li>create the repository</li>
+</ul>
+<p>Think about your project and the code you will have in the repository. What license would fit?</p>
+<p><a href="https://choosealicense.com/">Choose an open source license</a> can help you figure out what license is appropriate.</p>
+</section>
+<section id="edit-the-readme" class="level1">
+<h1>Edit the README</h1>
+<p>You can edit the readme to add relevant information. The format is classic markdown, the same as you have worked with before. <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Here</a> is a guide to basic markdown styling.</p>
+</section>
+<section id="save-the-readme" class="level1">
+<h1>Save the README</h1>
+<p>You save the file on Github by clicking on <code>Commit changes</code>. This will prompt you to enter a <code>commit message</code>. This is the information that will accompany your changes and will help you find changes you might be looking for.</p>
+</section>
+<section id="look-at-the-commit-history-of-the-repository" class="level1">
+<h1>Look at the commit history of the repository</h1>
+<p>There is a little button with a <code>clock symbol</code> that will get you to the history of the repository. It lists all the commits, with the commit message, the associated author, and its identifier.</p>
+<p>If you click on an individual commit you will see the changes that are captured within. Your brand new repository is of course a little bare-boned, but if you check out a repository that is a bit older you will get more information. Check out the <a href="https://github.com/SLUBioinformaticsInfrastructure/Three_Bees_Workshop_Series">SLUBI 3bees workshop series</a> github page, for example.</p>
+</section>
+<section id="further-resources" class="level1">
+<h1>Further resources</h1>
+<p>If you want to have a short introduction to the basic mechanisms in Github, you can follow <a href="https://github.com/skills/introduction-to-github?tab=readme-ov-file">this tutorial</a>, which guides you through making a repository, making a branch, committing a file, making a pull request and merging the pull request. Some of these we will cover today, others will be useful once you use git and github on a more regular basis.</p>
+</section>
+<section id="even-more-resources" class="level1">
+<h1>even more resources</h1>
+<p><a href="https://skills.github.com/">github skills</a></p>
 
 
 <!-- -->
@@ -5305,17 +5334,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class>
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;tutorials&quot;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>In the following exercise you will create a github repository to track your code. </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Let&#39;s first have a look at <span class="co">[</span><span class="ot">Github</span><span class="co">](https://github.com/)</span>, the code hosting platform that is based on git. We will do this together. </span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>These are the tutorials for the &quot;open science theory and practice&quot; part of the course &quot;Data handling and high-quality illustrations for publications&quot;.</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu"># In this tutorial</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu"># prerequisites: </span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>We will now:</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>You will need a <span class="in">`github account`</span>, an installation of <span class="in">`R`</span> and <span class="in">`RStudio`</span>, and you will have to have git set-up in your RStudio. </span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu"># set up git for rstudio</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>create a repository</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>edit some files</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>commit the changes </span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>look at the history of the respository. </span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>Let&#39;s get started!</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu"># Create a repository</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>name it </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>add a description</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>make it public</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>add a README</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>add the R gitignore</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>add the license</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>create the repository</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>Think about your project and the code you will have in the repository. What license would fit?</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Choose an open source license</span><span class="co">](https://choosealicense.com/)</span> can help you figure out what license is appropriate. </span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu"># Edit the README</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>You can edit the readme to add relevant information. The format is classic markdown, the same as you have worked with before. <span class="co">[</span><span class="ot">Here</span><span class="co">](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)</span> is a guide to basic markdown styling. </span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu"># Save the README</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>You save the file on Github by clicking on <span class="in">`Commit changes`</span>. This will prompt you to enter a <span class="in">`commit message`</span>. This is the information that will accompany your changes and will help you find changes you might be looking for. </span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu"># Look at the commit history of the repository</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>There is a little button with a <span class="in">`clock symbol`</span> that will get you to the history of the repository. It lists all the commits, with the commit message, the associated author, and its identifier. </span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>If you click on an individual commit you will see the changes that are captured within. Your brand new repository is of course a little bare-boned, but if you check out a repository that is a bit older you will get more information. Check out the <span class="co">[</span><span class="ot">SLUBI 3bees workshop series</span><span class="co">](https://github.com/SLUBioinformaticsInfrastructure/Three_Bees_Workshop_Series)</span> github page, for example. </span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="fu"># Further resources</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>If you want to have a short introduction to the basic mechanisms in Github, you can follow <span class="co">[</span><span class="ot">this tutorial</span><span class="co">](https://github.com/skills/introduction-to-github?tab=readme-ov-file)</span>, which guides you through making a repository, making a branch, committing a file, making a pull request and merging the pull request. Some of these we will cover today, others will be useful once you use git and github on a more regular basis. </span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="fu"># even more resources</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">github skills</span><span class="co">](https://skills.github.com/)</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

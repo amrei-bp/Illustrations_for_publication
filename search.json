@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "tutorials",
-    "section": "",
-    "text": "These are the tutorials for the “open science theory and practice” part of the course “Data handling and high-quality illustrations for publications”.\n\nprerequisites:\nYou will need a github account, an installation of R and RStudio, and you will have to have git set-up in your RStudio.\n\n\nset up git for rstudio"
-  },
-  {
-    "objectID": "git_one.html",
-    "href": "git_one.html",
+    "objectID": "quarto.html",
+    "href": "quarto.html",
     "title": "",
     "section": "",
-    "text": "Code"
+    "text": "Code\n\n\n\n\n\n\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```"
+  },
+  {
+    "objectID": "git_github.html",
+    "href": "git_github.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\nIn the following exercise you will create a github repository to track your code.\nLet’s first have a look at Github, the code hosting platform that is based on git. We will do this together.\n\nIn this tutorial\nWe will now:\n\ncreate a repository\nedit some files\ncommit the changes\nlook at the history of the respository.\n\nLet’s get started!\n\n\nCreate a repository\n\nname it\nadd a description\nmake it public\nadd a README\nadd the R gitignore\nadd the license\ncreate the repository\n\nThink about your project and the code you will have in the repository. What license would fit?\nChoose an open source license can help you figure out what license is appropriate.\n\n\nEdit the README\nYou can edit the readme to add relevant information. The format is classic markdown, the same as you have worked with before. Here is a guide to basic markdown styling.\n\n\nSave the README\nYou save the file on Github by clicking on Commit changes. This will prompt you to enter a commit message. This is the information that will accompany your changes and will help you find changes you might be looking for.\n\n\nLook at the commit history of the repository\nThere is a little button with a clock symbol that will get you to the history of the repository. It lists all the commits, with the commit message, the associated author, and its identifier.\nIf you click on an individual commit you will see the changes that are captured within. Your brand new repository is of course a little bare-boned, but if you check out a repository that is a bit older you will get more information. Check out the SLUBI 3bees workshop series github page, for example.\n\n\nFurther resources\nIf you want to have a short introduction to the basic mechanisms in Github, you can follow this tutorial, which guides you through making a repository, making a branch, committing a file, making a pull request and merging the pull request. Some of these we will cover today, others will be useful once you use git and github on a more regular basis.\n\n\neven more resources\ngithub skills"
   },
   {
     "objectID": "tagging.html",
@@ -21,17 +21,17 @@
     "text": "Code"
   },
   {
-    "objectID": "quarto.html",
-    "href": "quarto.html",
-    "title": "",
-    "section": "",
-    "text": "Code\n\n\n\n\n\n\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```"
-  },
-  {
     "objectID": "git_and_r.html",
     "href": "git_and_r.html",
     "title": "",
     "section": "",
-    "text": "Code\n\n\n\n\nIn the following exercise you will create a github repository to track your code.\n\nChoose your license\nThink about your project and the code you will have in the repository. What license would fit?\nChoose an open source license can help you figure out what license is appropriate.\n\n\nCreate a repository\n\nname it\nadd a description\nmake it publie\nadd the license\nadd a README\n\n\n\ngitignore\n\n\ngithub skills\ngithub skills"
+    "text": "Code\n\n\n\n\nIn the following exercise you will create a github repository to track your code.\n\nChoose your license\nThink about your project and the code you will have in the repository. What license would fit?\nChoose an open source license can help you figure out what license is appropriate.\n\n\nCreate a repository\n\nname it\nadd a description\nmake it publie\nadd the license\nadd a README\n\n\n\ngitignore\n\n\ngithub skills\ngithub skills\nWorking collaboratively with git on github\nWe will follow the Data carpentries tutorial here: https://datacarpentry.org/rr-version-control/03-git-in-rstudio/\nThe data we will work on is in the following repository: https://github.com/SGBC/survey\nWe can use git and github to work collaboratively with others on projects and code. The process here is a bit more involved, but at heart it uses the same change, stage, commit processes that we have already seen. What we add is a remote repository, also called upstream repository.\nBecause we do not want to mess with the stable upstream repository we first make a fork and copy it into our own repository. Then we clone the contents of our remote repository onto our local computer and create a new branch. Then we can change, stage and commit. The commits can then be pushed to out remote repository. Once we are happy with out new feature we can create a pull request (ask the owner of the upstream repository to add our code to their repository).\nThis is how this process can look like:\nImage adapted from: https://www.linode.com/docs/guides/how-to-install-git-and-clone-a-github-repository/\nAnd here is another way to look at the process:\nImage taken from: https://tighten.com/insights/adding-commits-to-a-pull-request/\nSo, let’s try this out!\nStep 1: Fork:\nSometimes you might want to change someone elses data, or work together with them on some code. For this you do not work on the exact same code, but you make yourself a copy - you fork the project. A fork is a new repository that shares code and visibility settings with the original “upstream” repository.\nFork the survey repository.\nGo to the repository at https://github.com/SGBC/survey. Click on “Fork”” (on the top right corner). Click on “create fork”\nNow you have a copy in your github account!\nStep 2: Clone the repository with RStudio\nNow you have a fork of the repository on your github, but you do not have the files in that repository locally on your computer. To retreive them to your local computer you need to clone the repository to your local environment.\nOn GitHub, navigate to the Code tab of the repository. On the right side of the screen, click Code, local and ssh. Click the Copy to clipboard icon to the right of the repository URL. Open RStudio on your local environment. Click File, New Project, Version Control, Git. Paste the repository URL and enter TAB to move to the Project directory name field. Click Create Project.\nStep 3: Make a new branch\nThis is the branch where you will do the work, change the code etc.\n\nin Rstudio, click the purple branch button\nname your branch\nchoose from origin\n\nStep 4: Make the changes you want to see\non your new branch\nStep 5: Stage\nStage your changes to be committed.\nGo to the Git pane in RStudio. Stage the changes for the files you changed by checking the boxes next to then, and hit Commit Step 6: Commit\nView the diff, and commit your changes, with a commit message.\nIn the pop-up window view the diff for the files. Enter an informative commit message, like “Changed analysis year to X”, and hit Commit.\nStep 7: Push\nNow you have the changes saved and tracked on your local computer. But you want to on github too!\nPush your changes to your own fork of the the survey GitHub repository.\npush: When using git push always means pushing commits from your local respository (your computer) to a remote repository (GitHub).\nNow push your changes to GitHub by hitting Push. Enter login information as needed.\n \nStep 8: Pull request On GitHub, navigate to the Pull request tab at the top. New pull request At the top, choose from which repository and branch, to which repository and branch the data should be merged. In this case this is from your new branch to the main of the original upstream repository. Create pull request and describe what you have been doing. Step 9: wait for feedback\nThe owner of the upstream repository will now get a message that a pull request has been made. They review the changes, might write comments for you to respond to, or might merge your changes to the branch.\nStep 10: Sync your remote repository\nOnce the pull request is merged sync your remote main with the upstream repository, and pull these changes to your local repository.\nFurther reading and exercises on how to use git on the command line: https://uppsala.instructure.com/courses/96483/pages/git-1-introduction?module_item_id=1027800"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "tutorials",
+    "section": "",
+    "text": "These are the tutorials for the “open science theory and practice” part of the course “Data handling and high-quality illustrations for publications”.\n\nprerequisites:\nYou will need a github account, an installation of R and RStudio, and you will have to have git set-up in your RStudio.\n\n\nset up git for rstudio"
   }
 ]
