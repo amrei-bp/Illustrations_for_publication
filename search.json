@@ -11,18 +11,46 @@
     "href": "tagging.html",
     "title": "",
     "section": "",
-    "text": "Code"
+    "text": "Code\n\n\n\n\n\nWhat is tagging?\nIn Git one can tag specific points in a repository’s history with an extra label, besides the commit message. This can be used to mark releases for software (`version1.0, version2.0).\nFor us it can be useful when submitting code to journals. With a tag we can freeze the code in time, so to speak, and make sure we can always find the correct version - and share it with others."
   },
   {
     "objectID": "quarto.html",
     "href": "quarto.html",
     "title": "",
     "section": "",
-    "text": "Code\nThis part of the course is to have you practice the concepts we encountered earlier.\nI want you to work on the code you have worked on before - Tuesday or Wednesday, you can choose.\nMake changes, commit them and push them to your remote repository. Do one commit for each of the following:"
+    "text": "Code"
   },
   {
-    "objectID": "quarto.html#quarto",
-    "href": "quarto.html#quarto",
+    "objectID": "quarto.html#yaml-header",
+    "href": "quarto.html#yaml-header",
+    "title": "",
+    "section": "YAML header",
+    "text": "YAML header\n---\ntitle: \"Hello, Quarto\"\nformat: html\neditor: visual\n---\nThe YAML header resides at the top of the document, but is optional. It is marked by three dashes on either end and follows the basic YAML syntax, using key-value pairs key: value.\nCommon fields in the header are title, author, subtitle, date, as well as customizable fields such as theme, fontcolor.\nHere you can find the fields that are available in quarto for HTML documents."
+  },
+  {
+    "objectID": "quarto.html#code-chunks",
+    "href": "quarto.html#code-chunks",
+    "title": "",
+    "section": "Code Chunks",
+    "text": "Code Chunks\n```{.r}\n#| label: load-packages\n#| include: false\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n```\nCan be added anywhere in the document (apart from the header). Different chunks in the same document can execute different languages. The language is identified by the curly brackets at the beginning.\nOptional code chunk options are listed below and are identified by #|.\nIn RStudio you can either render the entire document, or individual chunks."
+  },
+  {
+    "objectID": "quarto.html#markdown-text",
+    "href": "quarto.html#markdown-text",
+    "title": "",
+    "section": "Markdown Text",
+    "text": "Markdown Text\nFormated text between the code chunks with\n\nsection headers (#, ##, ###)\nhyperlinks ([in-line text](web-address))\nembedded images\ninline code chunks\nand more\n\nThis text is there to help you and others. It can explain why you do certain things with your data, can describe results, make comments, tell a story…"
+  },
+  {
+    "objectID": "quarto.html#how-it-works",
+    "href": "quarto.html#how-it-works",
+    "title": "",
+    "section": "how it works",
+    "text": "how it works\n\n\n\n\n\nWhen you render the document, knitr executes all of the code chunks and creates a new markdown, which includes code and output, as well as the text. Then, pandoc takes this .md file and creates the final output."
+  },
+  {
+    "objectID": "quarto.html#quarto-1",
+    "href": "quarto.html#quarto-1",
     "title": "",
     "section": "quarto",
     "text": "quarto\nQuarto documentation"
@@ -32,7 +60,7 @@
     "href": "quarto.html#color-in-illustrations",
     "title": "",
     "section": "color in illustrations",
-    "text": "color in illustrations\nBetter plots\nChapter on Highlighting in Plots\nPractical Rules for Using Color in Charts\n\nif you do not have code\nyou worked on you can use the one below:\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```"
+    "text": "color in illustrations\nBetter plots\nChapter on Highlighting in Plots\nPractical Rules for Using Color in Charts\n\nif you do not have code\nyou can use the one below:\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```"
   },
   {
     "objectID": "git_and_r.html",
