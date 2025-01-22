@@ -8,7 +8,25 @@ These are the tutorials for the "open science theory and practice" part of the c
 
 You will need a `github account`, an installation of `R` and `RStudio`, and you will have to have git set-up in your RStudio. 
 
-# set up git for rstudio
+# setting up git for rstudio
+
+## Install git
+
+[Instructions on how to install git](https://happygitwithr.com/install-git)
+
+## configure git in Rstudio
+
+[Instructions on how to configure git in Rstudio](https://happygitwithr.com/hello-git)
+
+## Set up keys for SSH access
+
+[Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+alternative information:
+
+[Set up keys to identify yourself with github](https://happygitwithr.com/ssh-keys)
+
+
 
 
 
