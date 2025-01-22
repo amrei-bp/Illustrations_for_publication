@@ -1,6 +1,47 @@
 
-# 
+This part of the course is to have you practice the concepts we encountered earlier. 
 
+I want you to work on the code you have worked on before - Tuesday or Wednesday, you can choose. 
+
+Make changes, commit them and push them to your remote repository. Do one commit for each of the following:
+
+# 1. Quarto theme
+
+Change the theme of your file - read up on Quarto themes and apply one you like
+
+# 2. Literate programming
+
+Are you sure you are using the full potential of quarto's literate programming capabilities?
+
+Make sure you have text for all your images, comments that explain what the code is doing...
+
+# 3. ggplot colors
+
+Change the colors of one of your images. 
+
+
+
+# relevant resources
+
+## quarto
+
+[Quarto documentation](https://quarto.org/)
+
+## color in illustrations
+
+[Better plots](https://better-plots.netlify.app/)
+
+[Chapter on Highlighting in Plots](https://better-plots.netlify.app/04-highlighting.html)
+
+[Practical Rules for Using Color in Charts](http://www.perceptualedge.com/articles/visual_business_intelligence/rules_for_using_color.pdf)
+
+
+
+
+
+### if you do not have code
+
+you worked on you can use the one below:
 ````{verbatim}
 ---
 title: "ggplot2 demo"
