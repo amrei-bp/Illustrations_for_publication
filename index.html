@@ -4797,7 +4797,12 @@ vertical-align: -.125em;
    
   <ul>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link active" data-scroll-target="#prerequisites">prerequisites:</a></li>
-  <li><a href="#set-up-git-for-rstudio" id="toc-set-up-git-for-rstudio" class="nav-link" data-scroll-target="#set-up-git-for-rstudio">set up git for rstudio</a></li>
+  <li><a href="#setting-up-git-for-rstudio" id="toc-setting-up-git-for-rstudio" class="nav-link" data-scroll-target="#setting-up-git-for-rstudio">setting up git for rstudio</a>
+  <ul class="collapse">
+  <li><a href="#install-git" id="toc-install-git" class="nav-link" data-scroll-target="#install-git">Install git</a></li>
+  <li><a href="#configure-git-in-rstudio" id="toc-configure-git-in-rstudio" class="nav-link" data-scroll-target="#configure-git-in-rstudio">configure git in Rstudio</a></li>
+  <li><a href="#set-up-keys-for-ssh-access" id="toc-set-up-keys-for-ssh-access" class="nav-link" data-scroll-target="#set-up-keys-for-ssh-access">Set up keys for SSH access</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -4828,12 +4833,26 @@ vertical-align: -.125em;
 <h1>prerequisites:</h1>
 <p>You will need a <code>github account</code>, an installation of <code>R</code> and <code>RStudio</code>, and you will have to have git set-up in your RStudio.</p>
 </section>
-<section id="set-up-git-for-rstudio" class="level1">
-<h1>set up git for rstudio</h1>
+<section id="setting-up-git-for-rstudio" class="level1">
+<h1>setting up git for rstudio</h1>
+<section id="install-git" class="level2">
+<h2 class="anchored" data-anchor-id="install-git">Install git</h2>
+<p><a href="https://happygitwithr.com/install-git">Instructions on how to install git</a></p>
+</section>
+<section id="configure-git-in-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="configure-git-in-rstudio">configure git in Rstudio</h2>
+<p><a href="https://happygitwithr.com/hello-git">Instructions on how to configure git in Rstudio</a></p>
+</section>
+<section id="set-up-keys-for-ssh-access" class="level2">
+<h2 class="anchored" data-anchor-id="set-up-keys-for-ssh-access">Set up keys for SSH access</h2>
+<p><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">Adding a new SSH key to your GitHub account</a></p>
+<p>alternative information:</p>
+<p><a href="https://happygitwithr.com/ssh-keys">Set up keys to identify yourself with github</a></p>
 
 
 <!-- -->
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -5315,9 +5334,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>You will need a <span class="in">`github account`</span>, an installation of <span class="in">`R`</span> and <span class="in">`RStudio`</span>, and you will have to have git set-up in your RStudio. </span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu"># set up git for rstudio</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu"># setting up git for rstudio</span></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Install git</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Instructions on how to install git</span><span class="co">](https://happygitwithr.com/install-git)</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## configure git in Rstudio</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Instructions on how to configure git in Rstudio</span><span class="co">](https://happygitwithr.com/hello-git)</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## Set up keys for SSH access</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Adding a new SSH key to your GitHub account</span><span class="co">](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>alternative information:</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Set up keys to identify yourself with github</span><span class="co">](https://happygitwithr.com/ssh-keys)</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
