@@ -11,7 +11,14 @@
     "href": "tagging.html",
     "title": "",
     "section": "",
-    "text": "Code\n\n\n\n\n\nWhat is tagging?\nIn Git one can tag specific points in a repository’s history with an extra label, besides the commit message. This can be used to mark releases for software (`version1.0, version2.0).\nFor us it can be useful when submitting code to journals. With a tag we can freeze the code in time, so to speak, and make sure we can always find the correct version - and share it with others."
+    "text": "Code"
+  },
+  {
+    "objectID": "tagging.html#lightweight-versus-annotated",
+    "href": "tagging.html#lightweight-versus-annotated",
+    "title": "",
+    "section": "lightweight versus annotated",
+    "text": "lightweight versus annotated\nGit supports two types of tags: lightweight and annotated.\nA lightweight tag is pretty much just a pointer to a specific commit.\nAnnotated tags are stored as full objects in the Git database. They’re checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG)."
   },
   {
     "objectID": "quarto.html",
