@@ -1,7 +1,7 @@
 
 # What is literate programming?
 
-LIterate programming produces documents where explanations given in a natural language (such as English) is interspersed with snippets of code.
+Literate programming produces documents where explanations given in a natural language (such as English) is interspersed with snippets of code.
 
 This concept was introduced 1984 by Donald Knuth (according to [Wikipedia](https://en.wikipedia.org/wiki/Literate_programming)), and is good practice for `reproducibility and open science`.
 
@@ -112,6 +112,8 @@ Change the colors of one of your images.
 ## quarto
 
 [Quarto documentation](https://quarto.org/)
+
+[Awesome quarto](https://github.com/mcanouil/awesome-quarto), a collection of quarto documents to check out and get inspired by. 
 
 ## color in illustrations
 
