@@ -115,6 +115,8 @@ Change the colors of one of your images.
 
 [Awesome quarto](https://github.com/mcanouil/awesome-quarto), a collection of quarto documents to check out and get inspired by. 
 
+[Quarto tricks](https://www.productive-r-workflow.com/quarto-tricks)
+
 ## color in illustrations
 
 [Better plots](https://better-plots.netlify.app/)
