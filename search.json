@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "git_github.html",
-    "href": "git_github.html",
-    "title": "",
-    "section": "",
-    "text": "Code\n\n\n\n\nIn the following exercise you will create a github repository to track your code.\nLet’s first have a look at Github, the code hosting platform that is based on git. We will do this together.\n\nIn this tutorial\nWe will now:\n\ncreate a repository\nedit some files\ncommit the changes\nlook at the history of the respository.\n\nLet’s get started!\n\n\nCreate a repository\n\nname it\nadd a description\nmake it public\nadd a README\nadd the R gitignore\nadd the license\ncreate the repository\n\nThink about your project and the code you will have in the repository. What license would fit?\nChoose an open source license can help you figure out what license is appropriate.\n\n\nEdit the README\nYou can edit the readme to add relevant information. The format is classic markdown, the same as you have worked with before. Here is a guide to basic markdown styling.\n\n\nSave the README\nYou save the file on Github by clicking on Commit changes. This will prompt you to enter a commit message. This is the information that will accompany your changes and will help you find changes you might be looking for.\n\n\nLook at the commit history of the repository\nThere is a little button with a clock symbol that will get you to the history of the repository. It lists all the commits, with the commit message, the associated author, and its identifier.\nIf you click on an individual commit you will see the changes that are captured within. Your brand new repository is of course a little bare-boned, but if you check out a repository that is a bit older you will get more information. Check out the SLUBI 3bees workshop series github page, for example.\n\n\nFurther resources\nIf you want to have a short introduction to the basic mechanisms in Github, you can follow this tutorial, which guides you through making a repository, making a branch, committing a file, making a pull request and merging the pull request. Some of these we will cover today, others will be useful once you use git and github on a more regular basis.\n\n\neven more resources\ngithub skills"
-  },
-  {
-    "objectID": "tagging.html",
-    "href": "tagging.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "tagging.html#lightweight-versus-annotated",
-    "href": "tagging.html#lightweight-versus-annotated",
-    "title": "",
-    "section": "lightweight versus annotated",
-    "text": "lightweight versus annotated\nGit supports two types of tags: lightweight and annotated.\nA lightweight tag is pretty much just a pointer to a specific commit.\nAnnotated tags are stored as full objects in the Git database. They’re checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG)."
-  },
-  {
     "objectID": "quarto.html",
     "href": "quarto.html",
     "title": "",
@@ -60,7 +39,7 @@
     "href": "quarto.html#quarto-1",
     "title": "",
     "section": "quarto",
-    "text": "quarto\nQuarto documentation"
+    "text": "quarto\nQuarto documentation\nAwesome quarto, a collection of quarto documents to check out and get inspired by."
   },
   {
     "objectID": "quarto.html#color-in-illustrations",
@@ -68,6 +47,27 @@
     "title": "",
     "section": "color in illustrations",
     "text": "color in illustrations\nBetter plots\nChapter on Highlighting in Plots\nPractical Rules for Using Color in Charts\n\nif you do not have code\nyou can use the one below:\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```"
+  },
+  {
+    "objectID": "git_github.html",
+    "href": "git_github.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\nIn the following exercise you will create a github repository to track your code.\nLet’s first have a look at Github, the code hosting platform that is based on git. We will do this together.\n\nIn this tutorial\nWe will now:\n\ncreate a repository\nedit some files\ncommit the changes\nlook at the history of the respository.\n\nLet’s get started!\n\n\nCreate a repository\n\nname it\nadd a description\nmake it public\nadd a README\nadd the R gitignore\nadd the license\ncreate the repository\n\nThink about your project and the code you will have in the repository. What license would fit?\nChoose an open source license can help you figure out what license is appropriate.\n\n\nEdit the README\nYou can edit the readme to add relevant information. The format is classic markdown, the same as you have worked with before. Here is a guide to basic markdown styling.\n\n\nSave the README\nYou save the file on Github by clicking on Commit changes. This will prompt you to enter a commit message. This is the information that will accompany your changes and will help you find changes you might be looking for.\n\n\nLook at the commit history of the repository\nThere is a little button with a clock symbol that will get you to the history of the repository. It lists all the commits, with the commit message, the associated author, and its identifier.\nIf you click on an individual commit you will see the changes that are captured within. Your brand new repository is of course a little bare-boned, but if you check out a repository that is a bit older you will get more information. Check out the SLUBI 3bees workshop series github page, for example.\n\n\nFurther resources\nIf you want to have a short introduction to the basic mechanisms in Github, you can follow this tutorial, which guides you through making a repository, making a branch, committing a file, making a pull request and merging the pull request. Some of these we will cover today, others will be useful once you use git and github on a more regular basis.\n\n\neven more resources\ngithub skills"
+  },
+  {
+    "objectID": "tagging.html",
+    "href": "tagging.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "tagging.html#lightweight-versus-annotated",
+    "href": "tagging.html#lightweight-versus-annotated",
+    "title": "",
+    "section": "lightweight versus annotated",
+    "text": "lightweight versus annotated\nGit supports two types of tags: lightweight and annotated.\nA lightweight tag is pretty much just a pointer to a specific commit.\nAnnotated tags are stored as full objects in the Git database. They’re checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG)."
   },
   {
     "objectID": "git_and_r.html",
