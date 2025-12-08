@@ -49,6 +49,34 @@
     "text": "color in illustrations\nBetter plots\nChapter on Highlighting in Plots\nPractical Rules for Using Color in Charts\n\nif you do not have code\nyou can use the one below:\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "tutorials",
+    "section": "",
+    "text": "These are the tutorials for the “open science theory and practice” part of the course “Data handling and high-quality illustrations for publications”."
+  },
+  {
+    "objectID": "index.html#install-git",
+    "href": "index.html#install-git",
+    "title": "tutorials",
+    "section": "Install git",
+    "text": "Install git\nInstructions on how to install git"
+  },
+  {
+    "objectID": "index.html#configure-git-in-rstudio",
+    "href": "index.html#configure-git-in-rstudio",
+    "title": "tutorials",
+    "section": "configure git in Rstudio",
+    "text": "configure git in Rstudio\nInstructions on how to configure git in Rstudio"
+  },
+  {
+    "objectID": "index.html#set-up-keys-for-ssh-access",
+    "href": "index.html#set-up-keys-for-ssh-access",
+    "title": "tutorials",
+    "section": "Set up keys for SSH access",
+    "text": "Set up keys for SSH access\nAdding a new SSH key to your GitHub account\nalternative information:\nSet up keys to identify yourself with github"
+  },
+  {
     "objectID": "git_github.html",
     "href": "git_github.html",
     "title": "",
@@ -96,33 +124,5 @@
     "title": "",
     "section": "via copy-paste",
     "text": "via copy-paste\n\ncopy the file you have already been working on into the Rstudio project directory\nthey will appear in the lower right in Rstudio"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "tutorials",
-    "section": "",
-    "text": "These are the tutorials for the “open science theory and practice” part of the course “Data handling and high-quality illustrations for publications”."
-  },
-  {
-    "objectID": "index.html#install-git",
-    "href": "index.html#install-git",
-    "title": "tutorials",
-    "section": "Install git",
-    "text": "Install git\nInstructions on how to install git"
-  },
-  {
-    "objectID": "index.html#configure-git-in-rstudio",
-    "href": "index.html#configure-git-in-rstudio",
-    "title": "tutorials",
-    "section": "configure git in Rstudio",
-    "text": "configure git in Rstudio\nInstructions on how to configure git in Rstudio"
-  },
-  {
-    "objectID": "index.html#set-up-keys-for-ssh-access",
-    "href": "index.html#set-up-keys-for-ssh-access",
-    "title": "tutorials",
-    "section": "Set up keys for SSH access",
-    "text": "Set up keys for SSH access\nAdding a new SSH key to your GitHub account\nalternative information:\nSet up keys to identify yourself with github"
   }
 ]
