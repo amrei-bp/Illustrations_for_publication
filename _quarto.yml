@@ -20,7 +20,7 @@ format:
     code-summary: "Click here to show the code"
     code-tools: true
     theme: 
-      - solar
+      - cosmo
       - test.scss
     self-contained: true
     page-layout: full
