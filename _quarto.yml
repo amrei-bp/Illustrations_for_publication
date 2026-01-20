@@ -5,14 +5,16 @@ website:
   title: "Open Science"
   navbar:
     left:
+      - href: version_control.qmd
+        text: Version Control
       - href: git_github.qmd
-        text: git and Github
+        text: Git and Github
       - href: git_and_r.qmd
-        text: git in Rstudio
+        text: Git in Rstudio
       - href: quarto.qmd
-        text: literate programming
+        text: Literate Programming
       - href: tagging.qmd
-        text: tagging
+        text: Tagging
 
 format: 
   html:
