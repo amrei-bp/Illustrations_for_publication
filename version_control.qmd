@@ -25,22 +25,19 @@ Distributed version control **facilitates collaboration** with others. Software 
 Additionally, GitHub, the code hosting platform based on git that we are using in this course, can be used to **maintain uniformity** within a working group. The group can develop their own project template that people can use and populate for their own projects.
 
 
-## git and GitHub
+## git
 
-**Git** is a **version control software** that is fully distributed - meaning that each project folder contains the full history of the project. These project folders are also called `repositories` and can be on several computers, or servers. 
+<img src="figures/git/Git-Logo-2Color.png"
+    alt="www.github.com"
+     style="float:left; width:120px; margin:0 1em 1em 0;">
+**Git** is a **version control software** that is fully distributed - meaning that each project folder contains the full history of the project. These folders are also called `repositories` and can be on several computers, or servers. 
 
-**Github** is a **code hosting platform** that is **based on git**. Here you can store, track and publish code (and code only, do NOT use github for data!). On Github you can collaborate with colleagues and work on projects together. 
 
 ::: {.callout-note}
 A **repository in git** is the .git/ folder inside of your directory. This repository tracks all changes made to files in your project and contains your project history. Usually we refer to the git repository as the **local repository**. 
-
-A **repository in GitHub** is where you can store your code, your files, together with their revision history. Repositories can be public or private, and might have several collaborators. Usually we refer to the Github repository as the **remote repository**. 
 :::
 
-Let's have a closer look at how git works:
-
-
-## git
+Let's have a closer look at how it works:
 
 >Git has three main states that your files can reside in: modified, staged, and committed:
 
@@ -58,6 +55,37 @@ And the basic commands of git:
 
 ![Basic git commands](figures/git/git_commands.png){.class width=50%}
 
+The majority of your version control work will happen in your local repository. You have the entire history of the project on your local disk, and do not need an internet connection to work on your data with git. 
+
+However, if you want to **have a backup** of your code, **share it** or **collaborate with others**, you might want to add GitHub into the mix:
+
+
+# GitHub
+
+<img src="figures/git/github-mark.png"
+    alt="www.github.com"
+     style="float:left; width:120px; margin:0 1em 1em 0;">
+<br>
+**Github** is a **code hosting platform** that is **based on git**. Here you can store, track and publish code (and code only, do NOT use github for data!). On Github you can collaborate with colleagues and work on projects together. 
+
+<br>
+
 ::: {.callout-note}
-These basic operations are all done on your local system. You have the entire history of the project on your local disk, and do not need an internet connection to work on your data with git. You can do all your commits on your local computer and later push them to a remote repostitory, like Github.
+A **repository in GitHub** is where you can store your code, your files, together with their revision history. Repositories can be public or private, and might have several collaborators. Usually we refer to the Github repository as the **remote repository**. 
 :::
+
+## Working with GitHub
+
+If you have a repository on GitHub you can **clone** its contents to you local server. That clones both the working copy, and the .git repository. 
+
+You can then work locally on your project, make changes, stage and commit them. Then, you can **push** them to the remote repository on GitHub, syncing the local and the remote repository. From there your collaborator can then **pull** them again. 
+
+![https://www.git-tower.com/learn/git/ebook/en/command-line/remote-repositories/introduction](figures/git/git-tower_basic-remote-workflow.png){fig-align="center" width=75%}
+
+
+
+
+## Collaborating on GitHub
+
+![https://www.linode.com/docs/guides/how-to-install-git-and-clone-a-github-repository/](figures/git/git-github-workflow_amrei.png){fig-align="center"}
+
