@@ -1,24 +1,30 @@
 ---
-title: "tutorials"
+title: "Illustrations for Publications: Data Management Tutorials"
 ---
 
-These are the tutorials for the "open science theory and practice" part of the course "Data handling and high-quality illustrations for publications".
+These are the tutorials for the "open science theory and practice" part of the course "Data Handling and High-Quality Illustrations for Publications".
 
-# prerequisites: 
+# Prerequisites: 
 
 You will need a `github account`, an installation of `R` and `RStudio`, and you will have to have git set-up in your RStudio. 
 
-# setting up git for rstudio
+# Setting up git for rstudio
 
 ## Install git
 
+First, you will need to install git on your local machine:
+
 [Instructions on how to install git](https://happygitwithr.com/install-git)
 
-## configure git in Rstudio
+## Configure git in Rstudio
+
+Then, you need to configure git in your Rstudio:
 
 [Instructions on how to configure git in Rstudio](https://happygitwithr.com/hello-git)
 
 ## Set up keys for SSH access
+
+To be able to push changes to GitHub, you need to be able to identify you with GitHub:
 
 [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
