@@ -36,7 +36,7 @@ This will create a zipped archive of your repository at the time of the tagging.
 
 You can access the tag via the same tag button as above, and then download the tagged version of your repository. 
 
-In RStudio, you can fetch the tag to your local repository (by using the `pull`command) and you will see it in the history. 
+In RStudio, you can fetch the tag to your local repository and you will see it in the history. 
 
 # Create a DOI for your repository
 
