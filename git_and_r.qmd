@@ -1,3 +1,6 @@
+---
+title: "Git in R Studio"
+---
 
 Now we have changed files and committed those changes on Github, and now we would like to add the files you have already worked on to them. 
 

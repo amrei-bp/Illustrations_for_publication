@@ -1,6 +1,6 @@
-
-
-# What is tagging?
+---
+title: "Tagging"
+---
 
 In Git one can tag specific points in a repository’s history with an extra label, besides the commit message. This can be used to mark releases for software (`version1.0, version2.0`). 
 

@@ -1,4 +1,6 @@
-# What is literate programming?
+---
+title: "Literate Programming"
+---
 
 Literate programming is a way of writing code together with explanations in a natural language (such as English). In a literate programming document, text and code are mixed, so that the reader can understand *what* the code does and *why* it is written that way.
 

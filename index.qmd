@@ -6,7 +6,7 @@ These are the tutorials for the "open science theory and practice" part of the c
 
 # Prerequisites: 
 
-You will need a `github account`, an installation of `R` and `RStudio`, and you will have to have git set-up in your RStudio. 
+You will need a `GitHub Account`, an installation of `R` and `RStudio`, and you will have to have git set-up in your RStudio. 
 
 # Setting up git for rstudio
 

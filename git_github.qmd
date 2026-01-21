@@ -1,3 +1,7 @@
+---
+title: "Git in GitHub"
+---
+
 In the following exercise, you will create a GitHub repository to track your code and document your work.  
 The repository will serve as a central place to store files, keep track of changes, and share your work.
 
