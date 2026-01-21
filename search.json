@@ -81,7 +81,49 @@
     "href": "git_github.html",
     "title": "",
     "section": "",
-    "text": "Code\n\n\n\n\nIn the following exercise you will create a github repository to track your code.\nLet’s first have a look at Github, the code hosting platform that is based on git. We will do this together.\n\nIn this tutorial\nWe will now:\n\ncreate a repository\nedit some files\ncommit the changes\nlook at the history of the respository.\n\nLet’s get started!\n\n\nCreate a repository\n\nname it\nadd a description\nmake it public\nadd a README\nadd the R gitignore\nadd the license\ncreate the repository\n\nThink about your project and the code you will have in the repository. What license would fit?\nChoose an open source license can help you figure out what license is appropriate.\n\n\nEdit the README\nYou can edit the readme to add relevant information. The format is classic markdown, the same as you have worked with before. Here is a guide to basic markdown styling.\n\n\nSave the README\nYou save the file on Github by clicking on Commit changes. This will prompt you to enter a commit message. This is the information that will accompany your changes and will help you find changes you might be looking for.\n\n\nLook at the commit history of the repository\nThere is a little button with a clock symbol that will get you to the history of the repository. It lists all the commits, with the commit message, the associated author, and its identifier.\nIf you click on an individual commit you will see the changes that are captured within. Your brand new repository is of course a little bare-boned, but if you check out a repository that is a bit older you will get more information. Check out the SLUBI 3bees workshop series github page, for example.\n\n\nFurther resources\nIf you want to have a short introduction to the basic mechanisms in Github, you can follow this tutorial, which guides you through making a repository, making a branch, committing a file, making a pull request and merging the pull request. Some of these we will cover today, others will be useful once you use git and github on a more regular basis.\n\n\neven more resources\ngithub skills"
+    "text": "Code\nIn the following exercise, you will create a GitHub repository to track your code and document your work.\nThe repository will serve as a central place to store files, keep track of changes, and share your work.\nWe will assume that you have already worked locally on your project, and are now ready to publish the data.\nWe will go through the steps together. Please make sure you are logged in to your GitHub account before continuing."
+  },
+  {
+    "objectID": "git_github.html#in-this-tutorial-you-will",
+    "href": "git_github.html#in-this-tutorial-you-will",
+    "title": "",
+    "section": "In this tutorial you will",
+    "text": "In this tutorial you will\n\ncreate a new repository on GitHub\nedit files directly on GitHub\ncommit changes with meaningful messages\nexplore the commit history of a repository"
+  },
+  {
+    "objectID": "git_github.html#create-a-new-repository",
+    "href": "git_github.html#create-a-new-repository",
+    "title": "",
+    "section": "Create a new repository",
+    "text": "Create a new repository\n\nGo to https://github.com.\nClick the green New icon in the top-right corner under the top banner of the homepage.\n\nYou will now see the repository creation page. You will be the default owner of this new repository. Fill in the following information:\n\nRepository name\nChoose a short and descriptive name for your project. GitHub automatically checks if the name is available (it will be if you do not already have a repository with that name, regardless of if others have one), and will indicate availability with a green checkmark.\nDescription\nAdd a brief description of what the repository is for.\nVisibility\nSelect Public. This means that everybody can see and download (clone) the repository and its contents, but they cannot change them without your permission. Perfect for sharing data!\nInitialize this repository\n\nCheck Add a README file\n\nAdd a .gitignore and choose the R template\n\nAdd a license\n\n\n\n\n\n\n\n\nTip\n\n\n\nThink briefly about your project and what kind of code it will contain.\nIf you are unsure which license to choose, the website\nChoose an open source license provides a helpful overview.\n\n\n\nClick Create repository."
+  },
+  {
+    "objectID": "git_github.html#edit-the-readme",
+    "href": "git_github.html#edit-the-readme",
+    "title": "",
+    "section": "Edit the README",
+    "text": "Edit the README\nAfter the repository has been created, you will see the README.md file.\n\nClick the Edit (pencil) icon.\nAdd some basic information about your project (for example, what it does or what it is for).\n\nThe README uses Markdown, which you have worked with before.\nA short guide to Markdown formatting on GitHub is available here:\nhttps://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax\n\n\n\n\n\n\nTip\n\n\n\nYou can preview how the rendered text will look like before committing the changes to the repository. Click on the Preview button."
+  },
+  {
+    "objectID": "git_github.html#save-your-changes-commit",
+    "href": "git_github.html#save-your-changes-commit",
+    "title": "",
+    "section": "Save your changes (commit)",
+    "text": "Save your changes (commit)\nOn GitHub, if you edit files and save them you automatically commit them to the git history.\nTo save the changes to the README:\n\nClick the green Commit changes.\nEnter a short commit message describing what you changed (for example, “Add initial README”). Nowadays the Copilot will help you with this.\nSelect Commit directly to the main branch\nConfirm the commit by clicking the green Commit changes button.\n\nCommit messages help you understand what changed and when, and make it easier to find changes later."
+  },
+  {
+    "objectID": "git_github.html#view-the-commit-history",
+    "href": "git_github.html#view-the-commit-history",
+    "title": "",
+    "section": "View the commit history",
+    "text": "View the commit history\nGitHub keeps a record of all commits in a repository.\n\nClick the button with the clock symbol that says History to open the commit history.\nEach entry shows the commit message, author, and a unique identifier.\nClicking on a commit shows the exact changes made.\n\nYour new repository will only contain a few commits, but older repositories show a more detailed history.\nAs an example, you can explore the\nSLUBI 3bees workshop series repository."
+  },
+  {
+    "objectID": "git_github.html#further-resources",
+    "href": "git_github.html#further-resources",
+    "title": "",
+    "section": "Further resources",
+    "text": "Further resources\nIf you want a guided introduction to GitHub basics, you can follow this tutorial:\nhttps://github.com/skills/introduction-to-github\nIt covers repositories, commits, branches, and pull requests. Some of these topics will be useful later as you work more with Git and GitHub."
   },
   {
     "objectID": "version_control.html",
