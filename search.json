@@ -11,42 +11,63 @@
     "href": "quarto.html#yaml-header",
     "title": "",
     "section": "YAML header",
-    "text": "YAML header\n---\ntitle: \"Hello, Quarto\"\nformat: html\neditor: visual\n---\nThe YAML header resides at the top of the document, but is optional. It is marked by three dashes on either end and follows the basic YAML syntax, using key-value pairs key: value.\nCommon fields in the header are title, author, subtitle, date, as well as customizable fields such as theme, fontcolor.\nHere you can find the fields that are available in quarto for HTML documents."
+    "text": "YAML header\n---\ntitle: \"Hello, Quarto\"\nformat: html\neditor: visual\n---\nThe YAML header appears at the top of the document and is optional. It is marked by three dashes on either end and follows the basic YAML syntax, using key-value pairs key: value.\nCommon fields in the header are - title - author - subtitle - date\nYou can also customise appearance and behaviour using options such as themes and fonts.\nHere you can find the fields that are available in quarto for HTML documents."
   },
   {
     "objectID": "quarto.html#code-chunks",
     "href": "quarto.html#code-chunks",
     "title": "",
     "section": "Code Chunks",
-    "text": "Code Chunks\n```{.r}\n#| label: load-packages\n#| include: false\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n```\nCan be added anywhere in the document (apart from the header). Different chunks in the same document can execute different languages. The language is identified by the curly brackets at the beginning.\nOptional code chunk options are listed below and are identified by #|.\nIn RStudio you can either render the entire document, or individual chunks."
+    "text": "Code Chunks\n```{.r}\n#| label: load-packages\n#| include: false\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n```\nCode chunks can be added anywhere in the document (except inside the YAML header). Different chunks in the same document can execute different languages. Each chunk specifies the language in the curly braces at the top.\nChunk options are written using #|and control things like:\n\nwhether code or output is shown,\nlabels and captions,\nwarnings and messages.\n\nIn RStudio you can either render the entire document, or individual chunks."
   },
   {
     "objectID": "quarto.html#markdown-text",
     "href": "quarto.html#markdown-text",
     "title": "",
     "section": "Markdown Text",
-    "text": "Markdown Text\nFormated text between the code chunks with\n\nsection headers (#, ##, ###)\nhyperlinks ([in-line text](web-address))\nembedded images\ninline code chunks\nand more\n\nThis text is there to help you and others. It can explain why you do certain things with your data, can describe results, make comments, tell a story…"
+    "text": "Markdown Text\nBetween code chunks, you write regular Markdown text, such as:\n\nsection headers (#, ##, ###)\nhyperlinks ([in-line text](web-address))\nimages\ninline code\nlists\n\nThis text is there to help you and others. It can explain why you do certain things with your data, can describe results, make comments, tell a story…"
   },
   {
     "objectID": "quarto.html#how-it-works",
     "href": "quarto.html#how-it-works",
     "title": "",
-    "section": "how it works",
-    "text": "how it works\n\n\n\n\n\nWhen you render the document, knitr executes all of the code chunks and creates a new markdown, which includes code and output, as well as the text. Then, pandoc takes this .md file and creates the final output."
+    "section": "How it works",
+    "text": "How it works\n\n\n\n\n\nWhen you render the document, knitr executes all of the code chunks and creates a new markdown, which includes code and output, as well as the text. Then, pandoc takes this .md file and creates the final output."
+  },
+  {
+    "objectID": "quarto.html#quarto-theme",
+    "href": "quarto.html#quarto-theme",
+    "title": "",
+    "section": "1. Quarto theme",
+    "text": "1. Quarto theme\nChange the theme of your file - read up on Quarto themes and apply one you like."
+  },
+  {
+    "objectID": "quarto.html#literate-programming",
+    "href": "quarto.html#literate-programming",
+    "title": "",
+    "section": "2. Literate programming",
+    "text": "2. Literate programming\nAre you sure you are using the full potential of quarto’s literate programming capabilities?\nMake sure you have text for all your images, comments that explain what the code is doing…"
+  },
+  {
+    "objectID": "quarto.html#ggplot-colors",
+    "href": "quarto.html#ggplot-colors",
+    "title": "",
+    "section": "3. ggplot colors",
+    "text": "3. ggplot colors\nModify the colours in at least one plot to improve clarity or appearance."
   },
   {
     "objectID": "quarto.html#quarto-1",
     "href": "quarto.html#quarto-1",
     "title": "",
-    "section": "quarto",
-    "text": "quarto\nQuarto documentation\nAwesome quarto, a collection of quarto documents to check out and get inspired by.\nQuarto tricks"
+    "section": "Quarto",
+    "text": "Quarto\nQuarto documentation\nAwesome quarto, a collection of quarto documents to check out and get inspired by.\nQuarto tricks"
   },
   {
-    "objectID": "quarto.html#color-in-illustrations",
-    "href": "quarto.html#color-in-illustrations",
+    "objectID": "quarto.html#color-in-figures",
+    "href": "quarto.html#color-in-figures",
     "title": "",
-    "section": "color in illustrations",
-    "text": "color in illustrations\nBetter plots\nChapter on Highlighting in Plots\nPractical Rules for Using Color in Charts\n\nif you do not have code\nyou can use the one below:\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```"
+    "section": "Color in figures",
+    "text": "Color in figures\nBetter plots\nChapter on Highlighting in Plots\nPractical Rules for Using Color in Charts\n\nIf you do not have code\nYou can use the example below:\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```"
   },
   {
     "objectID": "index.html",
@@ -161,11 +182,11 @@
     "text": "Code"
   },
   {
-    "objectID": "tagging.html#lightweight-versus-annotated",
-    "href": "tagging.html#lightweight-versus-annotated",
+    "objectID": "tagging.html#lightweight-versus-annotated-tags",
+    "href": "tagging.html#lightweight-versus-annotated-tags",
     "title": "",
-    "section": "lightweight versus annotated",
-    "text": "lightweight versus annotated\nGit supports two types of tags: lightweight and annotated.\nA lightweight tag is pretty much just a pointer to a specific commit.\nAnnotated tags are stored as full objects in the Git database. They’re checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG)."
+    "section": "Lightweight versus Annotated tags",
+    "text": "Lightweight versus Annotated tags\nGit supports two types of tags: lightweight and annotated.\nA lightweight tag is pretty much just a pointer to a specific commit.\nAnnotated tags are stored as full objects in the Git database. They’re checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG).\n\n\n\n\n\n\nNote\n\n\n\nOn GitHub, tags created via the web interface are always annotated tags, because they are tied to releases."
   },
   {
     "objectID": "git_and_r.html",
