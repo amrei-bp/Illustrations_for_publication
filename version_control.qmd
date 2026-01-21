@@ -87,5 +87,14 @@ You can then work locally on your project, make changes, stage and commit them. 
 
 ## Collaborating on GitHub
 
-![https://www.linode.com/docs/guides/how-to-install-git-and-clone-a-github-repository/](figures/git/git-github-workflow_amrei.png){fig-align="center"}
+With the setting above you can share code with someone, and this works well when publishing code. This works well when you own the GitHub repository or have write access to it.
 
+In collaborative and open-source settings, however, you often want to contribute to a repository you do not control. This is where **forking** comes in.
+
+Forking a repository means creating your own copy of an existing GitHub repository under your own GitHub account. Your fork is a remote repository that you control, but it still remembers where it came from.
+
+You then clone your fork to your local computer and work as usual: add, commit, push, and pull. When you are ready to share your changes, you can propose them back to the original repository by opening a **pull request**: a request to merge your changes into the original project.
+
+In this way, forking allows collaboration without giving everyone direct write access to the same repository. It also allows for more formal collaboration, with quality checked code etc. 
+
+![https://www.linode.com/docs/guides/how-to-install-git-and-clone-a-github-repository/](figures/git/git-github-workflow_amrei.png){fig-align="center"}
