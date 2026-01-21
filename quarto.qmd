@@ -1,36 +1,47 @@
-
 # What is literate programming?
 
-Literate programming produces documents where explanations given in a natural language (such as English) is interspersed with snippets of code.
+Literate programming is a way of writing code together with explanations in a natural language (such as English). In a literate programming document, text and code are mixed, so that the reader can understand *what* the code does and *why* it is written that way.
 
-This concept was introduced 1984 by Donald Knuth (according to [Wikipedia](https://en.wikipedia.org/wiki/Literate_programming)), and is good practice for `reproducibility and open science`.
+The concept was introduced in 1984 by Donald Knuth (see [Wikipedia](https://en.wikipedia.org/wiki/Literate_programming)) and is an important practice for **reproducibility** and **open science**.
+
 
 # Tools for literate programming
 
-There are a lot of different tools for literate programming, for example Jupyter notebooks, markdown, or quarto. 
+There are a lot of different tools for literate programming, for example Jupyter notebooks, markdown, or quarto.
 
 ![](quarto.png){fig-align="center" height="50"}
 
-You have already started to work with quarto, so we will have a closer look at that one - plus it makes me happy and I want to spread the joy!
+You have already started working with **Quarto**, so we will focus on that here
+- plus it makes me happy and I want to spread the joy!
 
 # Quarto
 
 <figure style="float: right; margin: 0 0 1em 1em; text-align: center;">
-  <img src="quarto_output.png" alt="Quarto Output" style="height: 400px;">
-  <figcaption style="font-style: italic; font-size: 0.9em;">image captured at https://quarto.org/</figcaption>
+
+<img src="quarto_output.png" alt="Quarto Output" style="height: 400px;"/>
+
+<figcaption style="font-style: italic; font-size: 0.9em;">
+
+image captured at https://quarto.org/
+
+</figcaption>
+
 </figure>
 
-Quarto is open source and you can edit quarto documents in a variety of editors, such as: jupyter notebooks, Visual Studio Code (more joy here, by the way), Rstudio or really any text editor.  
+Quarto is open source and you can edit quarto documents in a variety of editors, such as: jupyter notebooks, Visual Studio Code (more joy here, by the way), Rstudio or really any text editor.
 
-You can use a variety of language in your quarto documents - bash, R, Python, Julia, etc. 
+You can use a variety of language in your quarto documents - bash, R, Python, Julia, etc.
 
-And last but not least you can produce a variety of output formats, such as websites (like this tutorial,) articles, presentations (like this mornings' presentation), books, dashboards. 
+And last but not least you can produce a variety of output formats, such as websites (like this tutorial,) articles, presentations (like this mornings' presentation), books, dashboards.
 
-<div style="clear: both;"></div>
+::: {style="clear: both;"}
+:::
 
 # Basic syntax
 
-Based on this tutorial [here](https://quarto.org/docs/get-started/hello/rstudio.html).
+This section follows the Quarto introduction tutorial available  
+[here](https://quarto.org/docs/get-started/hello/rstudio.html).
+
 
 ## YAML header
 
@@ -42,11 +53,17 @@ editor: visual
 ---
 ```
 
-The YAML header resides at the top of the document, but is optional. It is marked by three dashes on either end and follows the basic YAML syntax, using key-value pairs `key: value`. 
+The YAML header appears at the top of the document and is optional. It is marked by three dashes on either end and follows the basic YAML syntax, using key-value pairs `key: value`.
 
-Common fields in the header are `title, author, subtitle, date`, as well as customizable fields such as `theme, fontcolor`. 
+Common fields in the header are 
+- title
+- author
+- subtitle
+- date
 
-[Here](https://quarto.org/docs/reference/formats/html.html) you can find the fields that are available in quarto for HTML documents. 
+You can also customise appearance and behaviour using options such as themes and fonts.
+
+[Here](https://quarto.org/docs/reference/formats/html.html) you can find the fields that are available in quarto for HTML documents.
 
 ## Code Chunks
 
@@ -60,64 +77,68 @@ library(palmerpenguins)
 ```
 ````
 
-Can be added anywhere in the document (apart from the header). Different chunks in the same document can execute different languages. The language is identified by the curly brackets at the beginning. 
+Code chunks can be added anywhere in the document (except inside the YAML header). Different chunks in the same document can execute different languages. Each chunk specifies the language in the curly braces at the top.
 
-Optional code chunk options are listed below and are identified by `#|`.
+Chunk options are written using `#|`and control things like:
 
-In RStudio you can either render the entire document, or individual chunks. 
+- whether code or output is shown,
+- labels and captions,
+- warnings and messages.
+
+In RStudio you can either render the entire document, or individual chunks.
 
 ## Markdown Text
 
-Formated text between the code chunks with 
+Between code chunks, you write regular Markdown text, such as:
 
-- section headers (`#, ##, ###`)
-- hyperlinks (`[in-line text](web-address)`)
-- embedded images
-- inline code chunks
-- and more
+-   section headers (`#, ##, ###`)
+-   hyperlinks (`[in-line text](web-address)`)
+-   images
+-   inline code
+-   lists
 
 This text is there to help you and others. It can explain why you do certain things with your data, can describe results, make comments, tell a story...
 
-## how it works
+## How it works
 
 ![](rstudio-qmd-how-it-works.png){fig-align="center" height="120"}
 
-When you render the document, knitr executes all of the code chunks and creates a new markdown, which includes code and output, as well as the text. Then, pandoc takes this .md file and creates the final output. 
+When you render the document, **knitr** executes all of the code chunks and creates a new markdown, which includes code and output, as well as the text. Then, **pandoc** takes this .md file and creates the final output.
 
 # Let's try it out!
 
-In the following tutorial you can practice what we have done so far and spruce up your code with some literate programming and other nice quarto features. 
+In the following exercise, you will practice literate programming using Quarto.
 
-I want you to work on the code you have worked on before - Tuesday or Wednesday, you can choose. 
+Work with the code you used earlier (from Tuesday or Wednesday — your choice).
+Make changes, commit them, and push them to your GitHub repository.
 
-Make changes, commit them and push them to your remote repository. Do one commit for each of the following:
+Please make **one commit for each of the following tasks**.
 
-# 1. Quarto theme
+## 1. Quarto theme
 
 Change the theme of your file - read up on Quarto themes and apply one you like.
 
-# 2. Literate programming
+## 2. Literate programming
 
 Are you sure you are using the full potential of quarto's literate programming capabilities?
 
 Make sure you have text for all your images, comments that explain what the code is doing...
 
-# 3. ggplot colors
+## 3. ggplot colors
 
-Change the colors of one of your images. 
+Modify the colours in at least one plot to improve clarity or appearance.
 
+# Relevant resources
 
-# relevant resources
-
-## quarto
+## Quarto
 
 [Quarto documentation](https://quarto.org/)
 
-[Awesome quarto](https://github.com/mcanouil/awesome-quarto), a collection of quarto documents to check out and get inspired by. 
+[Awesome quarto](https://github.com/mcanouil/awesome-quarto), a collection of quarto documents to check out and get inspired by.
 
 [Quarto tricks](https://www.productive-r-workflow.com/quarto-tricks)
 
-## color in illustrations
+## Color in figures
 
 [Better plots](https://better-plots.netlify.app/)
 
@@ -125,13 +146,10 @@ Change the colors of one of your images.
 
 [Practical Rules for Using Color in Charts](http://www.perceptualedge.com/articles/visual_business_intelligence/rules_for_using_color.pdf)
 
+### If you do not have code
 
+You can use the example below:
 
-
-
-### if you do not have code
-
-you can use the one below:
 ````{verbatim}
 ---
 title: "ggplot2 demo"
@@ -158,6 +176,4 @@ ggplot(airquality, aes(Temp, Ozone)) +
   geom_point() + 
   geom_smooth(method = "loess")
 ```
-
-
 ````
