@@ -3966,14 +3966,74 @@ vertical-align: -.125em;
 </section>
 <section id="configure-git-in-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="configure-git-in-rstudio">Configure git in Rstudio</h2>
-<p>Then, you need to configure git in your Rstudio:</p>
-<p><a href="https://happygitwithr.com/hello-git">Instructions on how to configure git in Rstudio</a></p>
+<p>Then, you need to configure git in your Rstudio. For this you need your GitHub user name and the e-mail associated with your GitHub account.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>How to find your GitHub username and email address
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<section id="find-your-github-username" class="level3">
+<h3 class="anchored" data-anchor-id="find-your-github-username">1. Find your GitHub username</h3>
+<ol type="1">
+<li>Go to <a href="https://github.com" class="uri">https://github.com</a> and log in.</li>
+<li>Click on your profile picture in the top-right corner.</li>
+<li>Your GitHub username is shown:
+<ul>
+<li>next to your profile picture on your profile page, and</li>
+<li>in the URL of your profile page<br>
+(for example: <code>https://github.com/your-username</code>).</li>
+</ul></li>
+</ol>
+</section>
+<section id="find-the-email-address-associated-with-your-github-account" class="level3">
+<h3 class="anchored" data-anchor-id="find-the-email-address-associated-with-your-github-account">2. Find the email address associated with your GitHub account</h3>
+<ol type="1">
+<li>While logged in, click your profile picture (top-right).</li>
+<li>Select <strong>Settings</strong>.</li>
+<li>In the left-hand menu, click <strong>Emails</strong>.</li>
+<li>You will see:
+<ul>
+<li>your primary email address, and</li>
+<li>any additional email addresses linked to your account.</li>
+</ul></li>
+</ol>
+<p><strong>Important:</strong><br>
+GitHub can hide your email from public view. The email shown in <em>Settings → Emails</em> is the one associated with your account and can be used for course setup or Git configuration.</p>
+</section>
+</div>
+</div>
+<p>Once you have the user name and e-mail address, you can follow the <a href="https://happygitwithr.com/hello-git">instructions on how to configure git in Rstudio</a>.</p>
+<p>You only have to follow the first point (7 Introduce yourself to Git).</p>
 </section>
 <section id="set-up-keys-for-ssh-access" class="level2">
 <h2 class="anchored" data-anchor-id="set-up-keys-for-ssh-access">Set up keys for SSH access</h2>
-<p>To be able to push changes to GitHub, you need to be able to identify you with GitHub:</p>
+<p>To be able to push changes to GitHub, you need to be able to identify you with GitHub.</p>
+<p>Go to the following page, and follow the instructions for</p>
+<ul class="task-list">
+<li><label><input type="checkbox">1) checking for existing SSH keys</label></li>
+<li><label><input type="checkbox">if needed, 2) generate a new SSH key</label></li>
+<li><label><input type="checkbox">and add the SSH key to your GitHub account</label></li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Add the keys as authentication keys!</p>
+</div>
+</div>
 <p><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account">Adding a new SSH key to your GitHub account</a></p>
-<p>alternative information:</p>
+<p>Alternative information, with a bit more information on what SSH keys are and how they work:</p>
 <p><a href="https://happygitwithr.com/ssh-keys">Set up keys to identify yourself with github</a></p>
 
 
@@ -4454,23 +4514,58 @@ vertical-align: -.125em;
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Configure git in Rstudio</span></span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Then, you need to configure git in your Rstudio:</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Then, you need to configure git in your Rstudio. For this you need your GitHub user name and the e-mail associated with your GitHub account. </span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Instructions on how to configure git in Rstudio</span><span class="co">](https://happygitwithr.com/hello-git)</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## Set up keys for SSH access</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>To be able to push changes to GitHub, you need to be able to identify you with GitHub:</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Adding a new SSH key to your GitHub account</span><span class="co">](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>alternative information:</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Set up keys to identify yourself with github</span><span class="co">](https://happygitwithr.com/ssh-keys)</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## How to find your GitHub username and email address</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">### 1. Find your GitHub username</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Go to <span class="ot">&lt;https://github.com&gt;</span> and log in.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Click on your profile picture in the top-right corner.</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Your GitHub username is shown:</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>next to your profile picture on your profile page, and</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>in the URL of your profile page  </span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>     (for example: <span class="in">`https://github.com/your-username`</span>).</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="fu">### 2. Find the email address associated with your GitHub account</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>While logged in, click your profile picture (top-right).</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Select **Settings**.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>In the left-hand menu, click **Emails**.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>You will see:</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>your primary email address, and</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">   - </span>any additional email addresses linked to your account.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>**Important:**  </span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>GitHub can hide your email from public view. The email shown in *Settings → Emails* is the one associated with your account and can be used for course setup or Git configuration.</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>Once you have the user name and e-mail address, you can follow the <span class="co">[</span><span class="ot">instructions on how to configure git in Rstudio</span><span class="co">](https://happygitwithr.com/hello-git)</span>. </span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>You only have to follow the first point (7 Introduce yourself to Git). </span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="fu">## Set up keys for SSH access</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>To be able to push changes to GitHub, you need to be able to identify you with GitHub. </span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>Go to the following page, and follow the instructions for </span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> 1) checking for existing SSH keys</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> if needed, 2) generate a new SSH key</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> and add the SSH key to your GitHub account</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>Add the keys as authentication keys!</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Adding a new SSH key to your GitHub account</span><span class="co">](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>Alternative information, with a bit more information on what SSH keys are and how they work:</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Set up keys to identify yourself with github</span><span class="co">](https://happygitwithr.com/ssh-keys)</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
