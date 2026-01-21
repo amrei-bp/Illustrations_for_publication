@@ -172,27 +172,41 @@
     "href": "git_and_r.html",
     "title": "",
     "section": "",
-    "text": "Code\nNow we have changed files and committed those changes on Github, but the plan is to work on our code locally on our computer (just as we are used to) and to use git/Github to track our work.\nWe will follow the Data carpentries tutorial here: https://datacarpentry.org/rr-version-control/03-git-in-rstudio/"
+    "text": "Code\nNow we have changed files and committed those changes on Github, and now we would like to add the files you have already worked on to them.\nThen, your can work on our code locally on our computer (just as you are used to) and to use git/Github to track our work in the future.\nWe will follow the Data carpentries tutorial here."
   },
   {
-    "objectID": "git_and_r.html#look-at-the-git-tab-in-rstudio",
-    "href": "git_and_r.html#look-at-the-git-tab-in-rstudio",
+    "objectID": "git_and_r.html#the-git-tab-in-rstudio",
+    "href": "git_and_r.html#the-git-tab-in-rstudio",
     "title": "",
-    "section": "Look at the git tab in Rstudio",
-    "text": "Look at the git tab in Rstudio\nCan you find the commit history?"
+    "section": "The Git tab in RStudio",
+    "text": "The Git tab in RStudio\nWhen a project is connected to a Git repository, RStudio automatically adds a new Git tab to the interface. It is located in the top-right pane of RStudio.\nThe Git tab allows you to:\n\nsee which files are tracked by Git,\ncheck whether files have changed,\nview the commit history,\ncommit and push changes later on.\n\nFor now, we will focus on exploring the existing history."
   },
   {
-    "objectID": "git_and_r.html#via-rstudio",
-    "href": "git_and_r.html#via-rstudio",
+    "objectID": "git_and_r.html#viewing-the-commit-history",
+    "href": "git_and_r.html#viewing-the-commit-history",
     "title": "",
-    "section": "via Rstudio",
-    "text": "via Rstudio\n\nin Rstudio, in the lower right corner, click on the plus documentsbutton in the Filestab\nspecify the type of document and the name"
+    "section": "Viewing the commit history",
+    "text": "Viewing the commit history\n\nClick on the Git tab.\nClick the button that looks like a clock.\n\nA window will open showing the commit history of the repository. Each entry represents one saved change and includes:\n\na short description of the change (the commit message),\nthe author,\nthe date and time.\n\nIf you click on a commit, you can see which files were changed and how.\n\n\n\n\n\n\nImportant\n\n\n\nThe commit history you see here is the same history you saw earlier on GitHub, the local project in RStudio and the remote repository on GitHub are connected."
   },
   {
-    "objectID": "git_and_r.html#via-copy-paste",
-    "href": "git_and_r.html#via-copy-paste",
+    "objectID": "git_and_r.html#working-with-git-in-rstudio",
+    "href": "git_and_r.html#working-with-git-in-rstudio",
     "title": "",
-    "section": "via copy-paste",
-    "text": "via copy-paste\n\ncopy the file you have already been working on into the Rstudio project directory\nthey will appear in the lower right in Rstudio"
+    "section": "Working with Git in RStudio",
+    "text": "Working with Git in RStudio\nFrom this point on, your typical workflow will be:\n\nmake changes locally,\ncommit them in RStudio,\npush them to GitHub.\n\nWe will practice these steps next."
+  },
+  {
+    "objectID": "git_and_r.html#add-files-via-rstudio",
+    "href": "git_and_r.html#add-files-via-rstudio",
+    "title": "",
+    "section": "Add files via RStudio",
+    "text": "Add files via RStudio\n\nIn RStudio, go to the Files tab (lower right pane).\nClick Blank File.\nChoose the type of document you want to create (for example, R Script or Quarto).\nGive the file a meaningful name and create it by clicking OK.\n\nThe new file will now appear in your project and can be tracked by Git."
+  },
+  {
+    "objectID": "git_and_r.html#add-files-via-copy-and-paste",
+    "href": "git_and_r.html#add-files-via-copy-and-paste",
+    "title": "",
+    "section": "Add files via copy and paste",
+    "text": "Add files via copy and paste\nIf you already have files you want to include:\n\nCopy the file(s) into your RStudio project directory.\nSwitch back to RStudio.\n\nThe files will appear automatically in the Files tab."
   }
 ]
