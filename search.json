@@ -2,70 +2,70 @@
   {
     "objectID": "quarto.html",
     "href": "quarto.html",
-    "title": "",
+    "title": "Literate Programming",
     "section": "",
-    "text": "Code"
+    "text": "Literate programming is a way of writing code together with explanations in a natural language (such as English). In a literate programming document, text and code are mixed, so that the reader can understand what the code does and why it is written that way.\nThe concept was introduced in 1984 by Donald Knuth (see Wikipedia) and is an important practice for reproducibility and open science."
   },
   {
     "objectID": "quarto.html#yaml-header",
     "href": "quarto.html#yaml-header",
-    "title": "",
+    "title": "Literate Programming",
     "section": "YAML header",
     "text": "YAML header\n---\ntitle: \"Hello, Quarto\"\nformat: html\neditor: visual\n---\nThe YAML header appears at the top of the document and is optional. It is marked by three dashes on either end and follows the basic YAML syntax, using key-value pairs key: value.\nCommon fields in the header are - title - author - subtitle - date\nYou can also customise appearance and behaviour using options such as themes and fonts.\nHere you can find the fields that are available in quarto for HTML documents."
   },
   {
     "objectID": "quarto.html#code-chunks",
     "href": "quarto.html#code-chunks",
-    "title": "",
+    "title": "Literate Programming",
     "section": "Code Chunks",
     "text": "Code Chunks\n```{.r}\n#| label: load-packages\n#| include: false\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n```\nCode chunks can be added anywhere in the document (except inside the YAML header). Different chunks in the same document can execute different languages. Each chunk specifies the language in the curly braces at the top.\nChunk options are written using #|and control things like:\n\nwhether code or output is shown,\nlabels and captions,\nwarnings and messages.\n\nIn RStudio you can either render the entire document, or individual chunks."
   },
   {
     "objectID": "quarto.html#markdown-text",
     "href": "quarto.html#markdown-text",
-    "title": "",
+    "title": "Literate Programming",
     "section": "Markdown Text",
     "text": "Markdown Text\nBetween code chunks, you write regular Markdown text, such as:\n\nsection headers (#, ##, ###)\nhyperlinks ([in-line text](web-address))\nimages\ninline code\nlists\n\nThis text is there to help you and others. It can explain why you do certain things with your data, can describe results, make comments, tell a story…"
   },
   {
     "objectID": "quarto.html#how-it-works",
     "href": "quarto.html#how-it-works",
-    "title": "",
+    "title": "Literate Programming",
     "section": "How it works",
     "text": "How it works\n\n\n\n\n\nWhen you render the document, knitr executes all of the code chunks and creates a new markdown, which includes code and output, as well as the text. Then, pandoc takes this .md file and creates the final output."
   },
   {
     "objectID": "quarto.html#quarto-theme",
     "href": "quarto.html#quarto-theme",
-    "title": "",
+    "title": "Literate Programming",
     "section": "1. Quarto theme",
     "text": "1. Quarto theme\nChange the theme of your file - read up on Quarto themes and apply one you like."
   },
   {
     "objectID": "quarto.html#literate-programming",
     "href": "quarto.html#literate-programming",
-    "title": "",
+    "title": "Literate Programming",
     "section": "2. Literate programming",
     "text": "2. Literate programming\nAre you sure you are using the full potential of quarto’s literate programming capabilities?\nMake sure you have text for all your images, comments that explain what the code is doing…"
   },
   {
     "objectID": "quarto.html#ggplot-colors",
     "href": "quarto.html#ggplot-colors",
-    "title": "",
+    "title": "Literate Programming",
     "section": "3. ggplot colors",
     "text": "3. ggplot colors\nModify the colours in at least one plot to improve clarity or appearance."
   },
   {
     "objectID": "quarto.html#quarto-1",
     "href": "quarto.html#quarto-1",
-    "title": "",
+    "title": "Literate Programming",
     "section": "Quarto",
     "text": "Quarto\nQuarto documentation\nAwesome quarto, a collection of quarto documents to check out and get inspired by.\nQuarto tricks"
   },
   {
     "objectID": "quarto.html#color-in-figures",
     "href": "quarto.html#color-in-figures",
-    "title": "",
+    "title": "Literate Programming",
     "section": "Color in figures",
     "text": "Color in figures\nBetter plots\nChapter on Highlighting in Plots\nPractical Rules for Using Color in Charts\n\nIf you do not have code\nYou can use the example below:\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```"
   },
@@ -100,49 +100,49 @@
   {
     "objectID": "git_github.html",
     "href": "git_github.html",
-    "title": "",
+    "title": "Git in GitHub",
     "section": "",
-    "text": "Code\nIn the following exercise, you will create a GitHub repository to track your code and document your work.\nThe repository will serve as a central place to store files, keep track of changes, and share your work.\nWe will assume that you have already worked locally on your project, and are now ready to publish the data.\nWe will go through the steps together. Please make sure you are logged in to your GitHub account before continuing."
+    "text": "In the following exercise, you will create a GitHub repository to track your code and document your work.\nThe repository will serve as a central place to store files, keep track of changes, and share your work.\nWe will assume that you have already worked locally on your project, and are now ready to publish the data.\nWe will go through the steps together. Please make sure you are logged in to your GitHub account before continuing."
   },
   {
     "objectID": "git_github.html#in-this-tutorial-you-will",
     "href": "git_github.html#in-this-tutorial-you-will",
-    "title": "",
+    "title": "Git in GitHub",
     "section": "In this tutorial you will",
     "text": "In this tutorial you will\n\ncreate a new repository on GitHub\nedit files directly on GitHub\ncommit changes with meaningful messages\nexplore the commit history of a repository"
   },
   {
     "objectID": "git_github.html#create-a-new-repository",
     "href": "git_github.html#create-a-new-repository",
-    "title": "",
+    "title": "Git in GitHub",
     "section": "Create a new repository",
     "text": "Create a new repository\n\nGo to https://github.com.\nClick the green New icon in the top-right corner under the top banner of the homepage.\n\nYou will now see the repository creation page. You will be the default owner of this new repository. Fill in the following information:\n\nRepository name\nChoose a short and descriptive name for your project. GitHub automatically checks if the name is available (it will be if you do not already have a repository with that name, regardless of if others have one), and will indicate availability with a green checkmark.\nDescription\nAdd a brief description of what the repository is for.\nVisibility\nSelect Public. This means that everybody can see and download (clone) the repository and its contents, but they cannot change them without your permission. Perfect for sharing data!\nInitialize this repository\n\nCheck Add a README file\n\nAdd a .gitignore and choose the R template\n\nAdd a license\n\n\n\n\n\n\n\n\nTip\n\n\n\nThink briefly about your project and what kind of code it will contain.\nIf you are unsure which license to choose, the website\nChoose an open source license provides a helpful overview.\n\n\n\nClick Create repository."
   },
   {
     "objectID": "git_github.html#edit-the-readme",
     "href": "git_github.html#edit-the-readme",
-    "title": "",
+    "title": "Git in GitHub",
     "section": "Edit the README",
     "text": "Edit the README\nAfter the repository has been created, you will see the README.md file.\n\nClick the Edit (pencil) icon.\nAdd some basic information about your project (for example, what it does or what it is for).\n\nThe README uses Markdown, which you have worked with before.\nA short guide to Markdown formatting on GitHub is available here:\nhttps://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax\n\n\n\n\n\n\nTip\n\n\n\nYou can preview how the rendered text will look like before committing the changes to the repository. Click on the Preview button."
   },
   {
     "objectID": "git_github.html#save-your-changes-commit",
     "href": "git_github.html#save-your-changes-commit",
-    "title": "",
+    "title": "Git in GitHub",
     "section": "Save your changes (commit)",
     "text": "Save your changes (commit)\nOn GitHub, if you edit files and save them you automatically commit them to the git history.\nTo save the changes to the README:\n\nClick the green Commit changes.\nEnter a short commit message describing what you changed (for example, “Add initial README”). Nowadays the Copilot will help you with this.\nSelect Commit directly to the main branch\nConfirm the commit by clicking the green Commit changes button.\n\nCommit messages help you understand what changed and when, and make it easier to find changes later."
   },
   {
     "objectID": "git_github.html#view-the-commit-history",
     "href": "git_github.html#view-the-commit-history",
-    "title": "",
+    "title": "Git in GitHub",
     "section": "View the commit history",
     "text": "View the commit history\nGitHub keeps a record of all commits in a repository.\n\nClick the button with the clock symbol that says History to open the commit history.\nEach entry shows the commit message, author, and a unique identifier.\nClicking on a commit shows the exact changes made.\n\nYour new repository will only contain a few commits, but older repositories show a more detailed history.\nAs an example, you can explore the\nSLUBI 3bees workshop series repository."
   },
   {
     "objectID": "git_github.html#further-resources",
     "href": "git_github.html#further-resources",
-    "title": "",
+    "title": "Git in GitHub",
     "section": "Further resources",
     "text": "Further resources\nIf you want a guided introduction to GitHub basics, you can follow this tutorial:\nhttps://github.com/skills/introduction-to-github\nIt covers repositories, commits, branches, and pull requests. Some of these topics will be useful later as you work more with Git and GitHub."
   },
@@ -177,56 +177,56 @@
   {
     "objectID": "tagging.html",
     "href": "tagging.html",
-    "title": "",
+    "title": "Tagging",
     "section": "",
-    "text": "Code"
+    "text": "In Git one can tag specific points in a repository’s history with an extra label, besides the commit message. This can be used to mark releases for software (version1.0, version2.0).\nFor us it can be useful when submitting code to journals. With a tag we can freeze the code in time, so to speak, and make sure we can always find the correct version - and share it with others."
   },
   {
     "objectID": "tagging.html#lightweight-versus-annotated-tags",
     "href": "tagging.html#lightweight-versus-annotated-tags",
-    "title": "",
+    "title": "Tagging",
     "section": "Lightweight versus Annotated tags",
     "text": "Lightweight versus Annotated tags\nGit supports two types of tags: lightweight and annotated.\nA lightweight tag is pretty much just a pointer to a specific commit.\nAnnotated tags are stored as full objects in the Git database. They’re checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG).\n\n\n\n\n\n\nNote\n\n\n\nOn GitHub, tags created via the web interface are always annotated tags, because they are tied to releases."
   },
   {
     "objectID": "git_and_r.html",
     "href": "git_and_r.html",
-    "title": "",
+    "title": "Git in R Studio",
     "section": "",
-    "text": "Code\nNow we have changed files and committed those changes on Github, and now we would like to add the files you have already worked on to them.\nThen, your can work on our code locally on our computer (just as you are used to) and to use git/Github to track our work in the future.\nWe will follow the Data carpentries tutorial here."
+    "text": "Now we have changed files and committed those changes on Github, and now we would like to add the files you have already worked on to them.\nThen, your can work on our code locally on our computer (just as you are used to) and to use git/Github to track our work in the future.\nWe will follow the Data carpentries tutorial here."
   },
   {
     "objectID": "git_and_r.html#the-git-tab-in-rstudio",
     "href": "git_and_r.html#the-git-tab-in-rstudio",
-    "title": "",
+    "title": "Git in R Studio",
     "section": "The Git tab in RStudio",
     "text": "The Git tab in RStudio\nWhen a project is connected to a Git repository, RStudio automatically adds a new Git tab to the interface. It is located in the top-right pane of RStudio.\nThe Git tab allows you to:\n\nsee which files are tracked by Git,\ncheck whether files have changed,\nview the commit history,\ncommit and push changes later on.\n\nFor now, we will focus on exploring the existing history."
   },
   {
     "objectID": "git_and_r.html#viewing-the-commit-history",
     "href": "git_and_r.html#viewing-the-commit-history",
-    "title": "",
+    "title": "Git in R Studio",
     "section": "Viewing the commit history",
     "text": "Viewing the commit history\n\nClick on the Git tab.\nClick the button that looks like a clock.\n\nA window will open showing the commit history of the repository. Each entry represents one saved change and includes:\n\na short description of the change (the commit message),\nthe author,\nthe date and time.\n\nIf you click on a commit, you can see which files were changed and how.\n\n\n\n\n\n\nImportant\n\n\n\nThe commit history you see here is the same history you saw earlier on GitHub, the local project in RStudio and the remote repository on GitHub are connected."
   },
   {
     "objectID": "git_and_r.html#working-with-git-in-rstudio",
     "href": "git_and_r.html#working-with-git-in-rstudio",
-    "title": "",
+    "title": "Git in R Studio",
     "section": "Working with Git in RStudio",
     "text": "Working with Git in RStudio\nFrom this point on, your typical workflow will be:\n\nmake changes locally,\ncommit them in RStudio,\npush them to GitHub.\n\nWe will practice these steps next."
   },
   {
     "objectID": "git_and_r.html#add-files-via-rstudio",
     "href": "git_and_r.html#add-files-via-rstudio",
-    "title": "",
+    "title": "Git in R Studio",
     "section": "Add files via RStudio",
     "text": "Add files via RStudio\n\nIn RStudio, go to the Files tab (lower right pane).\nClick Blank File.\nChoose the type of document you want to create (for example, R Script or Quarto).\nGive the file a meaningful name and create it by clicking OK.\n\nThe new file will now appear in your project and can be tracked by Git."
   },
   {
     "objectID": "git_and_r.html#add-files-via-copy-and-paste",
     "href": "git_and_r.html#add-files-via-copy-and-paste",
-    "title": "",
+    "title": "Git in R Studio",
     "section": "Add files via copy and paste",
     "text": "Add files via copy and paste\nIf you already have files you want to include:\n\nCopy the file(s) into your RStudio project directory.\nSwitch back to RStudio.\n\nThe files will appear automatically in the Files tab."
   }
