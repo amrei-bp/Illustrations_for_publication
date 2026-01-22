@@ -4,6 +4,14 @@ project:
 website:
   title: "Open Science"
   navbar:
+    logo: SLUBI_logo.png
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            url:  https://github.com/amrei-bp/Illustrations_for_publication
+          - text: Homepage
+            url:  https://amrei-bp.github.io/Illustrations_for_publication/
     left:
       - href: version_control.qmd
         text: Version Control
