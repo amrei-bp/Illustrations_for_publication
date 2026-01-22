@@ -44,6 +44,7 @@ And last but not least you can produce a variety of output formats, such as webs
 This section follows the Quarto introduction tutorial available  
 [here](https://quarto.org/docs/get-started/hello/rstudio.html).
 
+[Here](https://quarto.org/docs/authoring/markdown-basics.html) is an overview over Markdown Basics. 
 
 ## YAML header
 
