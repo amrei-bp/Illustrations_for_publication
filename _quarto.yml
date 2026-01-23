@@ -23,6 +23,8 @@ website:
         text: Literate Programming
       - href: tagging.qmd
         text: Tagging
+      - href: patchwork.qmd
+        text: Advanced plots in R
 
 format: 
   html:
