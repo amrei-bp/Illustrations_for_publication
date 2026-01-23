@@ -70,32 +70,88 @@
     "text": "Color in figures\nBetter plots\nChapter on Highlighting in Plots\nPractical Rules for Using Color in Charts\n\nIf you do not have code\nYou can use the example below:\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: \"Temperature and ozone level.\"\n#| warning: false\n\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\")\n```"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Illustrations for Publications: Data Management Tutorials",
+    "objectID": "git_and_r.html",
+    "href": "git_and_r.html",
+    "title": "Git in R Studio",
     "section": "",
-    "text": "These are the tutorials for the “open science theory and practice” part of the course “Data Handling and High-Quality Illustrations for Publications”."
+    "text": "Now we have changed files and committed those changes on Github, and now we would like to add the files you have already worked on to them.\nThen, your can work on our code locally on our computer (just as you are used to) and to use git/Github to track our work in the future.\nWe will follow the Data carpentries tutorial here."
   },
   {
-    "objectID": "index.html#install-git",
-    "href": "index.html#install-git",
-    "title": "Illustrations for Publications: Data Management Tutorials",
-    "section": "Install git",
-    "text": "Install git\nFirst, you will need to install git on your local machine:\nInstructions on how to install git"
+    "objectID": "git_and_r.html#the-git-tab-in-rstudio",
+    "href": "git_and_r.html#the-git-tab-in-rstudio",
+    "title": "Git in R Studio",
+    "section": "The Git tab in RStudio",
+    "text": "The Git tab in RStudio\nWhen a project is connected to a Git repository, RStudio automatically adds a new Git tab to the interface. It is located in the top-right pane of RStudio.\nThe Git tab allows you to:\n\nsee which files are tracked by Git,\ncheck whether files have changed,\nview the commit history,\ncommit and push changes later on.\n\nFor now, we will focus on exploring the existing history."
   },
   {
-    "objectID": "index.html#configure-git-in-rstudio",
-    "href": "index.html#configure-git-in-rstudio",
-    "title": "Illustrations for Publications: Data Management Tutorials",
-    "section": "Configure git in Rstudio",
-    "text": "Configure git in Rstudio\nThen, you need to configure git in your Rstudio. For this you need your GitHub user name and the e-mail associated with your GitHub account.\n\n\n\n\n\n\nTipHow to find your GitHub username and email address\n\n\n\n\n1. Find your GitHub username\n\nGo to https://github.com and log in.\nClick on your profile picture in the top-right corner.\nYour GitHub username is shown:\n\nnext to your profile picture on your profile page, and\nin the URL of your profile page\n(for example: https://github.com/your-username).\n\n\n\n\n2. Find the email address associated with your GitHub account\n\nWhile logged in, click your profile picture (top-right).\nSelect Settings.\nIn the left-hand menu, click Emails.\nYou will see:\n\nyour primary email address, and\nany additional email addresses linked to your account.\n\n\nImportant:\nGitHub can hide your email from public view. The email shown in Settings → Emails is the one associated with your account and can be used for course setup or Git configuration.\n\n\n\nOnce you have the user name and e-mail address, you can follow the instructions on how to configure git in Rstudio.\nYou only have to follow the first point (7 Introduce yourself to Git)."
+    "objectID": "git_and_r.html#viewing-the-commit-history",
+    "href": "git_and_r.html#viewing-the-commit-history",
+    "title": "Git in R Studio",
+    "section": "Viewing the commit history",
+    "text": "Viewing the commit history\n\nClick on the Git tab.\nClick the button that looks like a clock.\n\nA window will open showing the commit history of the repository. Each entry represents one saved change and includes:\n\na short description of the change (the commit message),\nthe author,\nthe date and time.\n\nIf you click on a commit, you can see which files were changed and how.\n\n\n\n\n\n\nImportant\n\n\n\nThe commit history you see here is the same history you saw earlier on GitHub, the local project in RStudio and the remote repository on GitHub are connected."
   },
   {
-    "objectID": "index.html#set-up-keys-for-ssh-access",
-    "href": "index.html#set-up-keys-for-ssh-access",
-    "title": "Illustrations for Publications: Data Management Tutorials",
-    "section": "Set up keys for SSH access",
-    "text": "Set up keys for SSH access\nTo be able to push changes to GitHub, you need to be able to identify you with GitHub.\nGo to the following page, and follow the instructions for\n\n1) checking for existing SSH keys\nif needed, 2) generate a new SSH key\nand add the SSH key to your GitHub account\n\n\n\n\n\n\n\nImportant\n\n\n\nAdd the keys as authentication keys!\n\n\nAdding a new SSH key to your GitHub account\nAlternative information, with a bit more information on what SSH keys are and how they work:\nSet up keys to identify yourself with github"
+    "objectID": "git_and_r.html#working-with-git-in-rstudio",
+    "href": "git_and_r.html#working-with-git-in-rstudio",
+    "title": "Git in R Studio",
+    "section": "Working with Git in RStudio",
+    "text": "Working with Git in RStudio\nFrom this point on, your typical workflow will be:\n\nmake changes locally,\ncommit them in RStudio,\npush them to GitHub.\n\nWe will practice these steps next."
+  },
+  {
+    "objectID": "git_and_r.html#add-files-via-rstudio",
+    "href": "git_and_r.html#add-files-via-rstudio",
+    "title": "Git in R Studio",
+    "section": "Add files via RStudio",
+    "text": "Add files via RStudio\n\nIn RStudio, go to the Files tab (lower right pane).\nClick Blank File.\nChoose the type of document you want to create (for example, R Script or Quarto).\nGive the file a meaningful name and create it by clicking OK.\n\nThe new file will now appear in your project and can be tracked by Git."
+  },
+  {
+    "objectID": "git_and_r.html#add-files-via-copy-and-paste",
+    "href": "git_and_r.html#add-files-via-copy-and-paste",
+    "title": "Git in R Studio",
+    "section": "Add files via copy and paste",
+    "text": "Add files via copy and paste\nIf you already have files you want to include:\n\nCopy the file(s) into your RStudio project directory.\nSwitch back to RStudio.\n\nThe files will appear automatically in the Files tab."
+  },
+  {
+    "objectID": "tagging.html",
+    "href": "tagging.html",
+    "title": "Tagging",
+    "section": "",
+    "text": "In Git one can tag specific points in a repository’s history with an extra label, besides the commit message. This can be used to mark releases for software (version1.0, version2.0).\nFor us it can be useful when submitting code to journals. With a tag we can freeze the code in time, so to speak, and make sure we can always find the correct version - and share it with others."
+  },
+  {
+    "objectID": "tagging.html#lightweight-versus-annotated-tags",
+    "href": "tagging.html#lightweight-versus-annotated-tags",
+    "title": "Tagging",
+    "section": "Lightweight versus Annotated tags",
+    "text": "Lightweight versus Annotated tags\nGit supports two types of tags: lightweight and annotated.\nA lightweight tag is pretty much just a pointer to a specific commit.\nAnnotated tags are stored as full objects in the Git database. They’re checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG).\n\n\n\n\n\n\nNote\n\n\n\nOn GitHub, tags created via the web interface are always annotated tags, because they are tied to releases."
+  },
+  {
+    "objectID": "version_control.html",
+    "href": "version_control.html",
+    "title": "Version control",
+    "section": "",
+    "text": "We all have worked on data before, done analyses, talked with our PI, changed the analyses, worked a bit more… and in the end we have something like this:\nVersion control, the practice of tracking and managing changes to files, can help us not descend into chaos. With a version controlled project you always know which file, and even which part of the file, is the most recent, and you can even go back to older versions if you have to.\nVersion control can be used on the local system, where both the version database and the checked out file - the one that is actively being worked on - are on the local computer. Good, but the local computer can be corrupted and then the data is compromised.\nVersion control can also be centralized, where the version database is on a central server, and the active file can be checked out from several different computers. This is useful when working from different systems, or when working with collaborators. However, when the central servers is compromised the historical version are lost.\nAt last, version control can be fully distributed, with all versions of the file being on the server and different computers. Each computer checks out the file from its own version database to work on them. The databases are then synchronized between the different computers and the server. One such distributed version control system is git. It can handle everything from small to very large projects and is simple to use. GitHubis a code hosting platform for version control and collaboration, built on git.\nDistributed version control facilitates collaboration with others. Software like git automatically tracks differences in files, and flags conflicts between files.\nAdditionally, GitHub, the code hosting platform based on git that we are using in this course, can be used to maintain uniformity within a working group. The group can develop their own project template that people can use and populate for their own projects."
+  },
+  {
+    "objectID": "version_control.html#git",
+    "href": "version_control.html#git",
+    "title": "Version control",
+    "section": "git",
+    "text": "git\n Git is a version control software that is fully distributed - meaning that each project folder contains the full history of the project. These folders are also called repositories and can be on several computers, or servers.\n\n\n\n\n\n\nNote\n\n\n\nA repository in git is the .git/ folder inside of your directory. This repository tracks all changes made to files in your project and contains your project history. Usually we refer to the git repository as the local repository.\n\n\nLet’s have a closer look at how it works:\n\nGit has three main states that your files can reside in: modified, staged, and committed:\n\n\n\nModified means that you have changed the file but have not committed it to your database yet.\nStaged means that you have marked a modified file in its current version to go into your next commit snapshot.\nCommitted means that the data is safely stored in your local database.\n\n\n\nsource: git documentation\n\nThis leads to the three main sections of a Git project: the working directory, the staging area, and the Git directory (or repository).\n\n\n\nWorking directory, staging area, and Git directory\n\n\nAnd the basic commands of git:\n\n\n\nBasic git commands\n\n\nThe majority of your version control work will happen in your local repository. You have the entire history of the project on your local disk, and do not need an internet connection to work on your data with git.\nHowever, if you want to have a backup of your code, share it or collaborate with others, you might want to add GitHub into the mix:"
+  },
+  {
+    "objectID": "version_control.html#working-with-github",
+    "href": "version_control.html#working-with-github",
+    "title": "Version control",
+    "section": "Working with GitHub",
+    "text": "Working with GitHub\nIf you have a repository on GitHub you can clone its contents to you local server. That clones both the working copy, and the .git repository.\nYou can then work locally on your project, make changes, stage and commit them. Then, you can push them to the remote repository on GitHub, syncing the local and the remote repository. From there your collaborator can then pull them again.\n\n\n\nhttps://www.git-tower.com/learn/git/ebook/en/command-line/remote-repositories/introduction"
+  },
+  {
+    "objectID": "version_control.html#collaborating-on-github",
+    "href": "version_control.html#collaborating-on-github",
+    "title": "Version control",
+    "section": "Collaborating on GitHub",
+    "text": "Collaborating on GitHub\nWith the setting above you can share code with someone, and this works well when publishing code. This works well when you own the GitHub repository or have write access to it.\nIn collaborative and open-source settings, however, you often want to contribute to a repository you do not control. This is where forking comes in.\nForking a repository means creating your own copy of an existing GitHub repository under your own GitHub account. Your fork is a remote repository that you control, but it still remembers where it came from.\nYou then clone your fork to your local computer and work as usual: add, commit, push, and pull. When you are ready to share your changes, you can propose them back to the original repository by opening a pull request: a request to merge your changes into the original project.\nIn this way, forking allows collaboration without giving everyone direct write access to the same repository. It also allows for more formal collaboration, with quality checked code etc.\n\n\n\nhttps://www.linode.com/docs/guides/how-to-install-git-and-clone-a-github-repository/"
   },
   {
     "objectID": "git_github.html",
@@ -147,87 +203,136 @@
     "text": "Further resources\nIf you want a guided introduction to GitHub basics, you can follow this tutorial:\nhttps://github.com/skills/introduction-to-github\nIt covers repositories, commits, branches, and pull requests. Some of these topics will be useful later as you work more with Git and GitHub."
   },
   {
-    "objectID": "version_control.html",
-    "href": "version_control.html",
-    "title": "Version control",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Illustrations for Publications: Data Management Tutorials",
     "section": "",
-    "text": "We all have worked on data before, done analyses, talked with our PI, changed the analyses, worked a bit more… and in the end we have something like this:\nVersion control, the practice of tracking and managing changes to files, can help us not descend into chaos. With a version controlled project you always know which file, and even which part of the file, is the most recent, and you can even go back to older versions if you have to.\nVersion control can be used on the local system, where both the version database and the checked out file - the one that is actively being worked on - are on the local computer. Good, but the local computer can be corrupted and then the data is compromised.\nVersion control can also be centralized, where the version database is on a central server, and the active file can be checked out from several different computers. This is useful when working from different systems, or when working with collaborators. However, when the central servers is compromised the historical version are lost.\nAt last, version control can be fully distributed, with all versions of the file being on the server and different computers. Each computer checks out the file from its own version database to work on them. The databases are then synchronized between the different computers and the server. One such distributed version control system is git. It can handle everything from small to very large projects and is simple to use. GitHubis a code hosting platform for version control and collaboration, built on git.\nDistributed version control facilitates collaboration with others. Software like git automatically tracks differences in files, and flags conflicts between files.\nAdditionally, GitHub, the code hosting platform based on git that we are using in this course, can be used to maintain uniformity within a working group. The group can develop their own project template that people can use and populate for their own projects."
+    "text": "These are the tutorials for the “open science theory and practice” part of the course “Data Handling and High-Quality Illustrations for Publications”."
   },
   {
-    "objectID": "version_control.html#git",
-    "href": "version_control.html#git",
-    "title": "Version control",
-    "section": "git",
-    "text": "git\n Git is a version control software that is fully distributed - meaning that each project folder contains the full history of the project. These folders are also called repositories and can be on several computers, or servers.\n\n\n\n\n\n\nNote\n\n\n\nA repository in git is the .git/ folder inside of your directory. This repository tracks all changes made to files in your project and contains your project history. Usually we refer to the git repository as the local repository.\n\n\nLet’s have a closer look at how it works:\n\nGit has three main states that your files can reside in: modified, staged, and committed:\n\n\n\nModified means that you have changed the file but have not committed it to your database yet.\nStaged means that you have marked a modified file in its current version to go into your next commit snapshot.\nCommitted means that the data is safely stored in your local database.\n\n\n\nsource: git documentation\n\nThis leads to the three main sections of a Git project: the working directory, the staging area, and the Git directory (or repository).\n\n\n\nWorking directory, staging area, and Git directory\n\n\nAnd the basic commands of git:\n\n\n\nBasic git commands\n\n\nThe majority of your version control work will happen in your local repository. You have the entire history of the project on your local disk, and do not need an internet connection to work on your data with git.\nHowever, if you want to have a backup of your code, share it or collaborate with others, you might want to add GitHub into the mix:"
+    "objectID": "index.html#install-git",
+    "href": "index.html#install-git",
+    "title": "Illustrations for Publications: Data Management Tutorials",
+    "section": "Install git",
+    "text": "Install git\nFirst, you will need to install git on your local machine:\nInstructions on how to install git"
   },
   {
-    "objectID": "version_control.html#working-with-github",
-    "href": "version_control.html#working-with-github",
-    "title": "Version control",
-    "section": "Working with GitHub",
-    "text": "Working with GitHub\nIf you have a repository on GitHub you can clone its contents to you local server. That clones both the working copy, and the .git repository.\nYou can then work locally on your project, make changes, stage and commit them. Then, you can push them to the remote repository on GitHub, syncing the local and the remote repository. From there your collaborator can then pull them again.\n\n\n\nhttps://www.git-tower.com/learn/git/ebook/en/command-line/remote-repositories/introduction"
+    "objectID": "index.html#configure-git-in-rstudio",
+    "href": "index.html#configure-git-in-rstudio",
+    "title": "Illustrations for Publications: Data Management Tutorials",
+    "section": "Configure git in Rstudio",
+    "text": "Configure git in Rstudio\nThen, you need to configure git in your Rstudio. For this you need your GitHub user name and the e-mail associated with your GitHub account.\n\n\n\n\n\n\nTipHow to find your GitHub username and email address\n\n\n\n\n1. Find your GitHub username\n\nGo to https://github.com and log in.\nClick on your profile picture in the top-right corner.\nYour GitHub username is shown:\n\nnext to your profile picture on your profile page, and\nin the URL of your profile page\n(for example: https://github.com/your-username).\n\n\n\n\n2. Find the email address associated with your GitHub account\n\nWhile logged in, click your profile picture (top-right).\nSelect Settings.\nIn the left-hand menu, click Emails.\nYou will see:\n\nyour primary email address, and\nany additional email addresses linked to your account.\n\n\nImportant:\nGitHub can hide your email from public view. The email shown in Settings → Emails is the one associated with your account and can be used for course setup or Git configuration.\n\n\n\nOnce you have the user name and e-mail address, you can follow the instructions on how to configure git in Rstudio.\nYou only have to follow the first point (7 Introduce yourself to Git)."
   },
   {
-    "objectID": "version_control.html#collaborating-on-github",
-    "href": "version_control.html#collaborating-on-github",
-    "title": "Version control",
-    "section": "Collaborating on GitHub",
-    "text": "Collaborating on GitHub\nWith the setting above you can share code with someone, and this works well when publishing code. This works well when you own the GitHub repository or have write access to it.\nIn collaborative and open-source settings, however, you often want to contribute to a repository you do not control. This is where forking comes in.\nForking a repository means creating your own copy of an existing GitHub repository under your own GitHub account. Your fork is a remote repository that you control, but it still remembers where it came from.\nYou then clone your fork to your local computer and work as usual: add, commit, push, and pull. When you are ready to share your changes, you can propose them back to the original repository by opening a pull request: a request to merge your changes into the original project.\nIn this way, forking allows collaboration without giving everyone direct write access to the same repository. It also allows for more formal collaboration, with quality checked code etc.\n\n\n\nhttps://www.linode.com/docs/guides/how-to-install-git-and-clone-a-github-repository/"
+    "objectID": "index.html#set-up-keys-for-ssh-access",
+    "href": "index.html#set-up-keys-for-ssh-access",
+    "title": "Illustrations for Publications: Data Management Tutorials",
+    "section": "Set up keys for SSH access",
+    "text": "Set up keys for SSH access\nTo be able to push changes to GitHub, you need to be able to identify you with GitHub.\nGo to the following page, and follow the instructions for\n\n1) checking for existing SSH keys\nif needed, 2) generate a new SSH key\nand add the SSH key to your GitHub account\n\n\n\n\n\n\n\nImportant\n\n\n\nAdd the keys as authentication keys!\n\n\nAdding a new SSH key to your GitHub account\nAlternative information, with a bit more information on what SSH keys are and how they work:\nSet up keys to identify yourself with github"
   },
   {
-    "objectID": "tagging.html",
-    "href": "tagging.html",
-    "title": "Tagging",
+    "objectID": "patchwork.html",
+    "href": "patchwork.html",
+    "title": "Combining plots with patchwork in R",
     "section": "",
-    "text": "In Git one can tag specific points in a repository’s history with an extra label, besides the commit message. This can be used to mark releases for software (version1.0, version2.0).\nFor us it can be useful when submitting code to journals. With a tag we can freeze the code in time, so to speak, and make sure we can always find the correct version - and share it with others."
+    "text": "In the previous sessions, you have worked with ggplot2 to create a variety of visualizations in R. Today’s session introduces the R package patchwork, which provides a simple and intuitive way to combine multiple ggplot objects into a single figure.\nDuring the lecture, we will see how patchwork can be used to arrange plots side by side, stack them vertically, and create more complex layouts with minimal additional code.\nYou can follow along during the lecture, recreate the examples, and try small modifications to the code.\nIn this session, we will work with the palmerpenguins dataset, which contains measurements of penguins from three species collected on islands in the Palmer Archipelago, Antarctica. The dataset includes variables such as bill length, bill depth, flipper length, body mass, and sex, and works nicely for practicing data visualization and analysis."
   },
   {
-    "objectID": "tagging.html#lightweight-versus-annotated-tags",
-    "href": "tagging.html#lightweight-versus-annotated-tags",
-    "title": "Tagging",
-    "section": "Lightweight versus Annotated tags",
-    "text": "Lightweight versus Annotated tags\nGit supports two types of tags: lightweight and annotated.\nA lightweight tag is pretty much just a pointer to a specific commit.\nAnnotated tags are stored as full objects in the Git database. They’re checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG).\n\n\n\n\n\n\nNote\n\n\n\nOn GitHub, tags created via the web interface are always annotated tags, because they are tied to releases."
+    "objectID": "patchwork.html#required-packages",
+    "href": "patchwork.html#required-packages",
+    "title": "Combining plots with patchwork in R",
+    "section": "Required Packages",
+    "text": "Required Packages\n\nlibrary(tidyverse) # data wrangling & plotting\nlibrary(patchwork) # multiple plot alignment\nlibrary(palmerpenguins) # Penguins data\n\nCombining two or more ggplot2 plots is a common task when creating figures. Several R packages can help with this, offering easy ways to arrange plots next to each other, adjust their relative widths and heights, or place one plot inside another as an inset. Below, you’ll find a few alternative options for combining plots.\nDuring the session, we will create four ggplot objects:\n\na scatter plot,\na bar plot,\na line plot, and\na boxplot.\n\nUsing these plots, we can test how to combine different plot types with patchwork.\n\np &lt;- ggplot(penguins, aes(x=flipper_length_mm, y=body_mass_g,color=species)) + geom_point()\nq &lt;- ggplot(penguins, aes(x=year, y=body_mass_g, fill=species)) + geom_bar(stat=\"identity\")\nr &lt;- ggplot(penguins, aes(x=flipper_length_mm, y=body_mass_g,color=species)) + geom_line()\ns &lt;- ggplot(penguins, aes(x=flipper_length_mm, y=body_mass_g,color=species)) + geom_boxplot()"
   },
   {
-    "objectID": "git_and_r.html",
-    "href": "git_and_r.html",
-    "title": "Git in R Studio",
-    "section": "",
-    "text": "Now we have changed files and committed those changes on Github, and now we would like to add the files you have already worked on to them.\nThen, your can work on our code locally on our computer (just as you are used to) and to use git/Github to track our work in the future.\nWe will follow the Data carpentries tutorial here."
+    "objectID": "patchwork.html#combining-plots-horizontally",
+    "href": "patchwork.html#combining-plots-horizontally",
+    "title": "Combining plots with patchwork in R",
+    "section": "Combining Plots: horizontally",
+    "text": "Combining Plots: horizontally\n\np + q \n\n\n\n\n\n\n\n\n\np | q # pipe\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNoteCombining plots with patchwork\n\n\n\nWhen using patchwork to combine ggplot2 plots, different operators control how the plots are arranged:\n\np + q adds plots to the layout and lets patchwork decide how to arrange them.\np | q places plots next to each other in a single row (left to right).\n\nIn simple cases, p + q and p | q may look the same, but using the pipe, |, makes your layout choice explicit and easier to understand."
   },
   {
-    "objectID": "git_and_r.html#the-git-tab-in-rstudio",
-    "href": "git_and_r.html#the-git-tab-in-rstudio",
-    "title": "Git in R Studio",
-    "section": "The Git tab in RStudio",
-    "text": "The Git tab in RStudio\nWhen a project is connected to a Git repository, RStudio automatically adds a new Git tab to the interface. It is located in the top-right pane of RStudio.\nThe Git tab allows you to:\n\nsee which files are tracked by Git,\ncheck whether files have changed,\nview the commit history,\ncommit and push changes later on.\n\nFor now, we will focus on exploring the existing history."
+    "objectID": "patchwork.html#combining-plots-vertically",
+    "href": "patchwork.html#combining-plots-vertically",
+    "title": "Combining plots with patchwork in R",
+    "section": "Combining Plots: vertically",
+    "text": "Combining Plots: vertically\nTo explicitely stack two plots on top of each other, you can use the slash /:\n\np / q # slash"
   },
   {
-    "objectID": "git_and_r.html#viewing-the-commit-history",
-    "href": "git_and_r.html#viewing-the-commit-history",
-    "title": "Git in R Studio",
-    "section": "Viewing the commit history",
-    "text": "Viewing the commit history\n\nClick on the Git tab.\nClick the button that looks like a clock.\n\nA window will open showing the commit history of the repository. Each entry represents one saved change and includes:\n\na short description of the change (the commit message),\nthe author,\nthe date and time.\n\nIf you click on a commit, you can see which files were changed and how.\n\n\n\n\n\n\nImportant\n\n\n\nThe commit history you see here is the same history you saw earlier on GitHub, the local project in RStudio and the remote repository on GitHub are connected."
+    "objectID": "patchwork.html#building-more-complex-figures",
+    "href": "patchwork.html#building-more-complex-figures",
+    "title": "Combining plots with patchwork in R",
+    "section": "Building more complex figures",
+    "text": "Building more complex figures\nOne of the strengths of patchwork is that simple operators can be combined to create more complex layouts. For example:\n\n(p | q) / r\n\n\n\n\n\n\n\n\nHere, p and q are first placed next to each other using |. The result is then combined with r using /, which stacks r below the first row. By grouping plots with parentheses, you can control how patchwork interprets the layout.\nBy combining operators like |, /, and +, you can gradually build up more complex figures from simple pieces, without needing to learn a separate layout language. This makes it easy to experiment with different arrangements and clearly communicate your results:\n\n(p | q | r) / s\n\n\n\n\n\n\n\n\nQuiztime: So how would the following plot look like?\n\np + q + r + s \n\n\n\n\n\n\n\nTip"
   },
   {
-    "objectID": "git_and_r.html#working-with-git-in-rstudio",
-    "href": "git_and_r.html#working-with-git-in-rstudio",
-    "title": "Git in R Studio",
-    "section": "Working with Git in RStudio",
-    "text": "Working with Git in RStudio\nFrom this point on, your typical workflow will be:\n\nmake changes locally,\ncommit them in RStudio,\npush them to GitHub.\n\nWe will practice these steps next."
+    "objectID": "patchwork.html#adding-labels-to-plots",
+    "href": "patchwork.html#adding-labels-to-plots",
+    "title": "Combining plots with patchwork in R",
+    "section": "Adding labels to plots",
+    "text": "Adding labels to plots\nPatchwork also makes it easy to add labels to your combined figures. For example:\n\np + q + r + s + \n    plot_annotation(tag_levels = 'a')\n\n\n\n\n\n\n\n\nThis adds automatic tags (a, b, c, d) to each plot in the order they appear in the layout. These labels are useful when referring to specific panels in a report, presentation, or figure caption.\nYou don’t need to label each plot manually — patchwork takes care of the numbering for you.\n\n\n\n\n\n\nNoteTry it yourself!\n\n\n\nHow do you think you can change the labels from letters to numbers? To uppercase letters?"
   },
   {
-    "objectID": "git_and_r.html#add-files-via-rstudio",
-    "href": "git_and_r.html#add-files-via-rstudio",
-    "title": "Git in R Studio",
-    "section": "Add files via RStudio",
-    "text": "Add files via RStudio\n\nIn RStudio, go to the Files tab (lower right pane).\nClick Blank File.\nChoose the type of document you want to create (for example, R Script or Quarto).\nGive the file a meaningful name and create it by clicking OK.\n\nThe new file will now appear in your project and can be tracked by Git."
+    "objectID": "patchwork.html#figure-titles",
+    "href": "patchwork.html#figure-titles",
+    "title": "Combining plots with patchwork in R",
+    "section": "Figure titles",
+    "text": "Figure titles\nYou can add figure titles:\n\np + q + r + s +\n    plot_annotation(tag_levels = 'a',\n        title = \"Combined Plot Example\", \n        subtitle = \"Using patchwork\")"
   },
   {
-    "objectID": "git_and_r.html#add-files-via-copy-and-paste",
-    "href": "git_and_r.html#add-files-via-copy-and-paste",
-    "title": "Git in R Studio",
-    "section": "Add files via copy and paste",
-    "text": "Add files via copy and paste\nIf you already have files you want to include:\n\nCopy the file(s) into your RStudio project directory.\nSwitch back to RStudio.\n\nThe files will appear automatically in the Files tab."
+    "objectID": "patchwork.html#collecting-legends",
+    "href": "patchwork.html#collecting-legends",
+    "title": "Combining plots with patchwork in R",
+    "section": "Collecting legends",
+    "text": "Collecting legends\nWhen you combine multiple plots, each plot may come with its own legend. This can make the final figure look repetitive or cluttered. Patchwork allows you to collect shared legends into a single guide.\n\np + q + r + s +\n    plot_annotation(tag_levels = 'a',\n        title = \"Combined Plot Example\", \n        subtitle = \"Using patchwork\")+ \n    plot_layout(guides = 'collect') \n\n\n\n\n\n\n\n\nThe guides = \"collect\" option gathers matching legends from all plots and displays them only once in the combined figure. This helps keep your figure clean and easier to read.\n\n\n\n\n\n\nNote\n\n\n\nWhat to watch out for:\n\nLegends are only collected if the aesthetics match (for example, the same variable mapped to color or fill).\nIf plots use different scales or different variables for the same aesthetic, patchwork will keep separate legends.\nSmall differences in how aesthetics are defined can prevent legends from being collected, even if the plots look similar.\n\nIf the legends are not collected as expected, check that the same variables and scales are used across plots."
+  },
+  {
+    "objectID": "patchwork.html#combine-titles-and-collected-legends",
+    "href": "patchwork.html#combine-titles-and-collected-legends",
+    "title": "Combining plots with patchwork in R",
+    "section": "Combine titles and collected legends",
+    "text": "Combine titles and collected legends\n\np + q + r + s +\n    plot_annotation(tag_levels = 'a',\n        title = \"Combined Plot Example\", \n        subtitle = \"Using patchwork\") + \n    plot_layout(guides = 'collect', \n        ncol = 2)"
+  },
+  {
+    "objectID": "patchwork.html#change-theme",
+    "href": "patchwork.html#change-theme",
+    "title": "Combining plots with patchwork in R",
+    "section": "Change theme",
+    "text": "Change theme\nYou can change the theme of the combined plot, just like you would for an individual plot.\n\np + q + r + s + \n    plot_annotation(tag_levels = 'a',\n        title = \"Combined Plot Example\", \n        subtitle = \"Using patchwork\") + \n    plot_layout(guides = 'collect', \n        ncol = 2) & \n    theme_minimal()\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`).\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_bar()`).\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_line()`).\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`stat_boxplot()`)."
+  },
+  {
+    "objectID": "patchwork.html#abus-script-for-journal-bmc",
+    "href": "patchwork.html#abus-script-for-journal-bmc",
+    "title": "Combining plots with patchwork in R",
+    "section": "Abu’s script for Journal: BMC",
+    "text": "Abu’s script for Journal: BMC\n\np + q + r + s + \n    plot_annotation(tag_levels = list(c('a','c','b','d'))) + \n    plot_layout(widths = c(2, 2)) &\n    theme(legend.position = \"right\", \n        legend.title = element_text(size = 10),\n        legend.text = element_text(size = 8), \n        legend.key.size = unit(0.2, 'cm'), \n        plot.tag = element_text(size = 14,face = 'bold'))"
+  },
+  {
+    "objectID": "patchwork.html#adding-inset-plots",
+    "href": "patchwork.html#adding-inset-plots",
+    "title": "Combining plots with patchwork in R",
+    "section": "Adding inset plots",
+    "text": "Adding inset plots\nPatchwork also allows you to place one plot inside another plot as an inset. This can be useful when you want to highlight a subset of the data or show a related view without creating a separate panel.\n\np + inset_element(q, 0.01, 0.59, 0.5, 0.9)\n\n\n\n\n\n\n\n\nIn this example, q is added as an inset inside plot p. The four numbers define the position of the inset, as proportions of the main plot area:\n\nthe first two values control the horizontal placement (left and right),\nthe last two values control the vertical placement (bottom and top).\n\nBy adjusting these values, you can move and resize the inset plot to fit your figure."
+  },
+  {
+    "objectID": "patchwork.html#does-patchwork-work-with-base-r-plots",
+    "href": "patchwork.html#does-patchwork-work-with-base-r-plots",
+    "title": "Combining plots with patchwork in R",
+    "section": "Does patchwork work with base R plots?",
+    "text": "Does patchwork work with base R plots?\nNo. Patchwork only works with ggplot2 plots.\nThis is because patchwork combines plots by working with ggplot objects behind the scenes.\nBase R plots (created with functions like plot(), hist(), or boxplot()) are drawn directly to the graphics device and are not stored as objects in the same way. Because of this, patchwork cannot rearrange or combine them.\n\nWorkaround:\nWe said that patchwork only works with ggplot2 plots. That is mostly true — but there is a useful exception.\n\nold_par &lt;- par(mar = c(0, 0, 0, 0), mgp = c(1, 0.25, 0),\n    bg = NA, cex.axis = 0.75, las = 1, tcl = -0.25)\n\nplot_object &lt;- p + ~plot(penguins$flipper_length_mm, penguins$body_mass_g, main = 'Base plot')\nplot_object\n\n\n\n\n\n\n\n\nIn this example, the base R plot is wrapped inside ~ (a formula). This tells patchwork to capture the output of the base plot and treat it as a graphical object, rather than a regular base plot.\nSo patchwork is not combining base plots directly. Instead, it is embedding the base plot as an element inside a patchwork layout.\n\n\n\n\n\n\nNote\n\n\n\n\nThe base plot is not a ggplot object and cannot be modified with ggplot2 layers.\nYou cannot easily collect legends or align axes between base plots and ggplots.\nThis approach is useful for quick comparisons or demonstrations, but mixing plot systems can be limiting."
+  },
+  {
+    "objectID": "patchwork.html#saving-plots",
+    "href": "patchwork.html#saving-plots",
+    "title": "Combining plots with patchwork in R",
+    "section": "Saving plots",
+    "text": "Saving plots\nCombined plots created with patchwork can be saved in the same way as regular ggplot2 plots. Since a patchwork object behaves like a ggplot object, you can use ggsave():\n\nggsave(\"plot.tiff\",plot_object,height=170,width=85,units=\"mm\",dpi=300,type=\"cairo\", device=tiff)\n# https://bmcmicrobiol.biomedcentral.com/submission-guidelines/preparing-your-manuscript#preparing+figures\n\nThis is the recommended approach for saving ggplot- and patchwork-based figures, especially for publication-quality output.\nIt is also possible to save ggplot objects using base R graphics devices:\n\npng(\"plot.tiff\",height=170,width=85,units=\"mm\",res=300)\nprint(p)\ndev.off()\n\nHere, print(p) is required to draw the ggplot object to the graphics device.\n\n\n\n\n\n\nNote\n\n\n\n\nggsave() automatically uses the size and resolution you specify and is usually the easiest option.\nWhen using base graphics devices (png(), tiff()), you must call print() for ggplot or patchwork objects.\nPatchwork figures are saved as a single plot, just like any other ggplot object.\nAlways check journal or report guidelines for required file formats, sizes, and resolution."
+  },
+  {
+    "objectID": "patchwork.html#documentation-and-help",
+    "href": "patchwork.html#documentation-and-help",
+    "title": "Combining plots with patchwork in R",
+    "section": "Documentation and help:",
+    "text": "Documentation and help:\n\npatchwork documentation\nGetting Started\nAssembling Plots\nDefining Layouts\nAdding Annotation\nAligning across pages\nchatgpt"
   }
 ]
