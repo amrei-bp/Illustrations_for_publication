@@ -228,6 +228,7 @@ You can change the theme of the combined plot, just like you would for an indivi
 #| fig-height: 3
 #| fig-width: 8
 #| echo: true
+#| warning: false
 p + q + r + s + 
     plot_annotation(tag_levels = 'a',
         title = "Combined Plot Example", 
@@ -236,6 +237,41 @@ p + q + r + s +
         ncol = 2) & 
     theme_minimal()
 ```
+
+::: {.callout-note}
+# + vs & in ggplot2 and patchwork
+
+When you combine plots using patchwork, the operators + and & look similar but do different things when adding themes.
+
+`+` applies to a single plot (or the last plot)
+
+The `+` operator in patchwork behaves the same way as in normal ggplot2:
+
+- It adds layers, scales, or themes to one plot
+- When used in a patchwork expression, **it usually affects only the plot it is directly attached to**.
+
+> p1 + theme_minimal()
+
+Here, `theme_minimal()` is applied only to `p1`.
+
+In a patchwork layout:
+
+> (p1 | p2) + theme_minimal()
+
+The theme is applied only to the combined patchwork object, but **not propagated to all individual plots in a consistent way**. This often leads to confusion or unexpected results.
+
+`&` applies to all plots in patchwork to make global styling explicit
+
+- The `&` operator is specific to patchwork.
+- It applies a theme (or other ggplot settings) to every plot in the patchwork.
+- It is designed specifically for global styling.
+
+> (p1 | p2) & theme_minimal()
+
+Here, `theme_minimal()` is **applied to both p1 and p2**.
+
+This is the preferred way to apply a common theme when working with multiple plots.
+:::
 
 ## Abu's script for `Journal: BMC`
 
@@ -251,6 +287,7 @@ p + q + r + s +
         legend.key.size = unit(0.2, 'cm'), 
         plot.tag = element_text(size = 14,face = 'bold')) 
 ```
+
 
 
 ## Adding inset plots
